@@ -1,0 +1,145 @@
+#graph1 {
+	display: inline-table;
+	float: left;
+	width: 300px;
+}
+
+#graph2 {
+	display: inline-table;
+	float: left;
+	width: 300px;
+}
+
+#graph3 {
+	display: inline-table;
+	float: left;
+	width: 300px;
+}
+
+.errorSet_container { /*
+			border-width: 2px 1px 1px;
+			border-style: solid;
+			border-color: #AAA #DDD #DDD;
+			height:165px;*/
+	
+}
+
+.errorSet_title {
+	border: 0px none;
+	height: 28px;
+	background: none repeat scroll 0% 0% #F7F7F7;
+	padding-left: 10px;
+}
+
+.errorSet_main {
+	padding: 10px 5px 5px 5px;
+}
+
+.errorSet_main_level,.errorSet_main_type,.errorSet_main_time {
+	width: 100px;
+	height: 35px;
+	border: 1px solid black;
+	margin-bottom: 4px;
+	cursor: pointer;
+}
+
+.errorSet_main_set {
+	border: 1px solid #ddd;
+	left: 140px;
+	position: absolute;
+	top: 60px;
+	height: 110px;
+	width: 600px;
+}
+
+.errorSet_main_set_title {
+	
+}
+
+.errorSet_main_set_ul {
+	list-style: none outside none;
+	color: #009b83;
+}
+
+.errorSet_main_set_ul li {
+	float: left;
+	margin-right: 8px;
+}
+
+.errorSet_main_set_ul li img {
+	cursor: pointer;
+}
+
+.errorSet_main_set_ul li span {
+	height: 20px;
+	line-height: 15px;
+	margin-left: 5px;
+}
+
+.errorSet_main_set_exerise {
+	position: relative;
+	top: 30px;
+	color: #009B83;
+	cursor: pointer;
+}
+
+.esStatistics_container {
+	border-width: 2px 1px 1px;
+	border-style: solid;
+	border-color: #AAA #DDD #DDD;
+	position: relative;
+	top: 40px;
+}
+
+.esStatistics_title {
+	border: 0px none;
+	height: 28px;
+	background: none repeat scroll 0% 0% #F7F7F7;
+}
+
+.esStatistics_main {
+	height: 350px;
+	overflow: hidden;
+	padding-left: 10px;
+	padding-top: 20px;
+}
+
+.esStatistics_main_graph {
+	float: left;
+	text-align: center;
+	overflow: hidden;
+	float: left;
+	/*width: 360px;*/
+	height: 305x;
+	margin: 3px;
+}
+
+table {
+	font-size: 12px;
+}
+
+.h {
+	font-weight: bold;
+}
+
+.od {
+	width: 40px;
+	text-align: center;
+}
+
+.ct {
+	width: 60px;
+	text-align: center;
+}
+
+.cd {
+	text-overflow: ellipsis;
+	width: 650px;
+}
+
+.cdd {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	width: 650px;
+}

@@ -1,0 +1,93 @@
+
+@charset "utf-8";
+/* CSS Document */
+
+.container {
+	float: left;
+	width: 900px;
+}
+.panel_main {
+	margin: 20px;
+	/*width: 1000px;*/
+	height: auto;
+	border: solid;
+	border-width: thin;
+	border-color: #e0e0d8;
+}
+.panel_sub {
+	margin: 20px;
+	/*width: 1000px;*/
+	border: solid;
+	border-width: thin;
+	border-color: #c3e5e7;
+}
+.content_margin {
+	margin: 10px;
+}
+
+.title {
+	font-weight: bold;
+}
+.span_item{
+	margin-left: 20px;
+	margin-right: 20px;
+	
+}
+.top_testpic {
+	display: inline-table;
+	float: left;
+	width: 500px;
+}
+
+.table{
+	text-align: center;
+	font-size: 12px;
+}
+.grey1 {
+	background-color:#f1f1f1;
+}
+.grey2 {
+	background-color:#f9f9f9;
+}
+
+.articalPageMain {
+	margin-left:60%;
+	margin-right:0%;
+	width: 400px;
+	
+	
+}
+
+.articalPage_page_ul {
+	list-style: none outside none;
+	margin: 0px;
+}
+
+.articalPage_page_ul .page {
+	float: left;
+	border: 1px solid #DDD;
+	background: repeat scroll 0 0 #DDD;
+	margin: 5px;
+	width: 27px;
+	height: 27px;
+	text-align: center;
+}
+
+.articalPage_page_ul .total {
+	float: left;
+	border: 1px solid #DDD;
+	background: repeat scroll 0 0 #DDD;
+	margin: 5px;
+	width: 37px;
+	height: 27px;
+	text-align: center;
+}
+
+ .table th{
+		background-color:#c3e5e7; 
+		color:#006e6b;
+		line-height: 25px;
+		}
+ .table td{
+	line-height: 25px;
+	}

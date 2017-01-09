@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+<hibernate-mapping package="com.srts.examination.domain">
+	<class name="ExamRecord" table="exm_record">
+		<id name="id">
+			<generator class="native" />
+		</id>
+		<property name="exam_date"/>
+		<property name="exam_content"/>
+		<property name="exam_grade"/>
+		<property name="exam_company"/>
+        <property name="tips"/>
+		<many-to-one name="usr" class="com.srts.system.domain.Sys_User" column="usrId"/>
+	</class>
+</hibernate-mapping>
+
+
+

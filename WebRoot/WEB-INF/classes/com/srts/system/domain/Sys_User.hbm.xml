@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-lazy="false" package="com.srts.system.domain">
+ <class name="Sys_User" table="srts_sys_user">
+  <id name="id">
+   <generator class="native"/>
+  </id>
+  <property name="username"/>
+  <property  name="password"/>
+  <property  name="company"/>
+  <property name="name"/>
+  <property  name="sex"/>
+  <property  name="workno"/>
+  <property  name="idno"/>
+  <property  name="workdate"/>
+  <property name="degree"/>
+  <property name="job"/>
+  <property  name="jobtitle"/>
+  <property  name="polite"/>
+  <property  name="photo"/>
+  <property name="age"/>
+  <many-to-one class="Sys_Department" column="departmentId" lazy="false" name="department"/>
+  
+  	<set name="roles" table="sys_user_roles" inverse="false" lazy="false">
+			<key column="userId"></key>
+			<many-to-many class="Sys_Role" column="roleId"/>
+		</set>
+  
+  	<!--<set name="userRoles" >
+			<key column="userId"></key>
+			<one-to-many class="Sys_User_Role" />
+		</set>
+
+    --><!--
+   <set cascade="delete" lazy="false" name="testScores"
+   order-by="id asc" sort="unsorted">
+   <key column="usrId"/>
+   <one-to-many class="com.srts.examination.domain.UserTestScore"/>
+  </set>
+  
+ --></class>
+</hibernate-mapping>

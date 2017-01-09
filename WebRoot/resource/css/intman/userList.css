@@ -1,0 +1,37 @@
+#t{
+	border: solid medium #008B8B;
+	border-collapse:collapse ;
+	width:800px;
+}
+
+#t tr{
+	border: solid thin #008B8B;
+	
+}
+
+#t td{
+	border: solid thin #008B8B;
+	width:170px;
+	height:30px;
+	text-align:center;
+}
+
+#t .no{
+	width:50px;
+}
+
+#t .iem{
+	width:200px;
+	height:30px;
+	margin-left:10px;
+	float:left;
+	}
+#select{
+	width:1200px;
+}
+.iem{
+	height:30px;
+	width:200px;
+	margin:0px 20px;
+	float:left;
+}

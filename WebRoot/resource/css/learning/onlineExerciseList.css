@@ -1,0 +1,141 @@
+#graph1 {
+	display: inline-table;
+	float: left;
+	width: 300px;
+}
+#graph2 {
+	display: inline-table;
+	float: left;
+	width: 300px;
+}
+#graph3 {
+	display: inline-table;
+	float: left;
+	width: 300px;
+}
+
+#choose {
+	background-image: url(../../image/learning/bg.jpg);
+}
+#tab1 {
+	display: none;
+}
+img {
+	cursor: pointer;
+}
+a {
+	cursor: pointer;
+}
+
+
+
+	.testBookContent{
+		height:300px;
+	}
+	.test_books{
+		width:200px;
+		float:left;
+		margin-left:20px;
+		margin-top:5px;
+	}
+	.test_book{
+		border:1px solid #DDD;
+		width:200px;
+		float:left;
+		margin-top:5px;
+	}
+	.test_book1{
+		border:1px solid #006e6b;
+	}
+	.book_img{
+		float:left;
+		width:80px;
+	}
+	.book_title{
+		float:left;
+		width:100px;
+		text-align: center;
+		cursor:pointer;
+	}
+	.change{
+		float:right;
+		cursor:pointer;
+	}
+	.test_chapters{
+		/*width:900px;*/
+		margin-top: 5px;
+		float:left;
+		margin-left: 50px;
+		width: 250px;
+	}
+.list_ul1{
+	margin: 0px;
+	padding: 0px;
+}
+.list_ul1 li {
+	width: 260px;
+	list-style: none;
+	float: left;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	height: 25px;
+}
+.o {
+	float: left;
+	
+	margin-bottom: 10px;
+	border-bottom: 1px solid #DDD;
+	padding-bottom: 3px;
+}
+
+.oo {
+	float: left;
+	max-height: 200px;
+	height: 230px;
+	width: 250px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	scrollbar-arrow-color: #f4ae21; 
+	scrollbar-face-color: #009b83; 
+	scrollbar-3dlight-color: #009b83; 
+	scrollbar-highlight-color: #009b83; 
+	scrollbar-shadow-color: #009b83; 
+	scrollbar-darkshadow-color: #009b83; 
+	scrollbar-track-color: #FFF; 
+	/*scrollbar-base-color:#f8f8f8;*/
+}
+.t {
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+.select_btn {
+	width: 20px;
+	float: left;
+	border: 1px solid #DDD;
+}
+
+.select_item {
+	margin-left: 10px;
+	width: 180px;
+	float: left;
+	font: 700 15px "Microsoft YaHei", SimHei, arial;
+}
+.test_count{
+	margin-top:5px;
+	float:left;
+	width:250px;
+	margin-left:50px;
+}
+.btn1{
+	width:70px;
+	cursor:pointer;
+	text-align: center;
+	border:1px solid #DDD;
+}
+.test_select{
+	margin-top:10px;
+}
+.unshow{
+	display: none;
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+<hibernate-mapping package="com.srts.communication.domain">
+	<class name="AnswerInfo" table="cmnc_answerinfo">
+		<id name="id">
+			<generator class="native" />
+		</id>
+		<property name="answerContent"/>
+		<property name="answerDate"/><!--cascade="all"  -->
+		<many-to-one name="usr" class="com.srts.system.domain.Sys_User" column="usrId" lazy="false" />
+		<many-to-one name="problem" class="ProblemInfo" column="problemId" />
+	</class>
+</hibernate-mapping>
+
+
+

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+<hibernate-mapping package="com.srts.examination.domain">
+	<class name="QuestionBank" table="exm_questionBank" >
+		<id name="id">
+			<generator class="native" />
+		</id>
+		<property name="type"/>
+		<property name="content"/>		
+		<property name="questionPic"/>
+		<property name="answer"/>
+		<property name="lastUpdateTime"/>
+		<property name="uploadTime"/>
+		<property name="selectOptions"/>
+		<many-to-one name="bookChapter" class="com.srts.knowledge.domain.BookChapter" column="bookChapterId" cascade="all" lazy="false"/>
+	</class>
+</hibernate-mapping>
+
+
+

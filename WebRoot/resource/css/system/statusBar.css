@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-image: url(../../image/system/statusBar_bg.gif);
+	background-repeat: repeat-x;
+	font-size: 12px;
+	padding-top: 13px;
+	text-align: center;
+	color: #FFF;
+}

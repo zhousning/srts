@@ -1,0 +1,48 @@
+.rank_sn {
+	display: inline-table;
+	float: left;
+	width: 20px;
+}
+.rank_name {
+	display: inline-table;
+	float: left;
+	width: 70px;
+}
+.rank_text {
+	display: inline-table;
+	float: left;
+	width: 100px;
+}
+.rank_num {
+	display: inline-table;
+	float: left;
+	width: 50px;
+}
+.rank1 {
+	height: 25px;
+	color: #F00;
+	border-bottom: dashed;
+	border-bottom-width: thin;
+	border-bottom-color: #F00;
+}
+.rank2 {
+	height: 25px;
+	color: #FC0;
+	border-bottom: dashed;
+	border-bottom-width: thin;
+	border-bottom-color: #FC0;
+}
+.rank3 {
+	height: 25px;
+	color: #09F;
+	border-bottom: dashed;
+	border-bottom-width: thin;
+	border-bottom-color: #09F;
+}
+.rank4 {
+	height: 25px;
+	color: #006e6b;
+	border-bottom: dashed;
+	border-bottom-width: thin;
+	border-bottom-color: #006e6b;
+}

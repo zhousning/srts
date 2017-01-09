@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+<hibernate-mapping package="com.srts.knowledge.domain">
+	<class name="Book" table="klg_book">
+		<id name="id">
+			<generator class="native" />
+		</id>
+		<property name="bookName"/>
+		<property name="date"/>
+		<property name="bookIcon"/>
+		<property name="bookIntro"/>
+		<property name="viewCount"/>
+		<property name="uploadUsr"/>
+		<set name="chapters" cascade="all" lazy="false" order-by="id">
+			<key column="bookId"/>
+			<one-to-many class="BookChapter"/>
+		</set>
+		<property name="saveURL"/>
+		<property name="loadCount"/>
+	</class>
+</hibernate-mapping>
+
+
+

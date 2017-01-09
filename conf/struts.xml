@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+	<!-- 指定为开发模式（默认值为false） -->
+	<constant name="struts.devMode" value="false" />
+
+	<!-- 指定主题使用simple（默认值为xhtml） -->
+	<constant name="struts.ui.theme" value="simple" />
+
+	<!-- 开启静态方法使用功能 -->
+	<constant name="struts.ognl.allowStaticMethodAccess" value="true" />
+
+	<constant name="struts.multipart.maxSize" value="524288000" />
+	
+	
+	<!-- 系统 -->
+	<include file="com/srts/system/action/system.xml"></include>
+	<!-- 培训学习 -->
+	<include file="com/srts/learning/action/LearnAction.xml"></include>
+	<!-- 学习交流 -->
+	<include file="com/srts/communication/action/CommunicationAction.xml"></include>
+	<!-- 在线考试-->
+	<include file="com/srts/examination/action/ExaminationAction.xml"></include>
+	<!-- 知识库 -->
+	<include file="com/srts/knowledge/action/KnowledgeAction.xml"></include>
+	<!-- 等级评估 -->
+	<include file="com/srts/estimation/action/workerEstimateAction.xml"></include>
+	<!-- 个人中心-->
+	<include file="com/srts/controlPanel/action/controlPanelAction.xml"></include>
+	<!-- 信息中心-->
+	<include file="com/srts/information/action/InformationAction.xml"></include>
+	<!-- 系统维护-->
+</struts>

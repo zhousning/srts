@@ -1,0 +1,266 @@
+.ModelDetailContainer {
+	border: 1px solid #DDD;
+	width: 900px;
+	float: left;
+	margin-bottom: 10px;
+}
+
+.ModelDetailContainer div {
+	float: left;
+}
+
+.model_title {
+	margin-left: 20px;
+	font-family: STHeiti, "Microsoft Yahei", "微软雅黑", Arial, sans-serif;
+	font-size: 18px;
+	color: #333333;
+	line-height: 32px;
+	cursor: pointer;
+}
+
+.model_title a {
+	text-decoration: none;
+	color: #333333;
+}
+
+.model_title a:hover {
+	text-decoration: underline;
+	color: #333333;
+}
+
+.modle_artical_count {
+	font-family: STHeiti, "Microsoft Yahei", "微软雅黑", Arial, sans-serif;
+	font-size: 13px;
+	color: #DDD;
+	margin-left: 20px;
+	line-height: 32px;
+}
+
+.articalDetailContainer {
+	border: 1px solid #DDD;
+	float: left;
+	width: 900px;
+}
+
+.articalDetailContainer div {
+	float: left;
+}
+
+.articalDetail_title {
+	width: 900px;
+}
+
+.articalDetail_title_reply {
+	float: right;
+	margin-right: 40px;
+}
+
+.articalDetail_title_reply a {
+	text-decoration: none;
+	color: #2D64B3;
+}
+
+.articalDetail_title_reply a:hover {
+	text-decoration: underline;
+	color: #2D64B3;
+}
+
+.articalDetail_title_cont {
+	font-family: STHeiti, "Microsoft Yahei", "微软雅黑", Arial, sans-serif;
+	font-size: 14px;
+	margin-left: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.articalDetail {
+	border: 1px solid #DDD;
+	width: 900px;
+}
+
+.articalPostUsrInfo,.replyPostUsrInfo {
+	width: 130px;
+}
+
+.postUsrInfo_img {
+	margin-left: 25px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.postUsrInfo_art_count {
+	width: 130px;
+	text-align: center;
+}
+
+.postUsrInfo_art_count span {
+	margin: 0px 3px 0px 3px;
+}
+
+.articalDetailInfo,.replyDetailInfo {
+	width: 760px;
+	border-left: 1px solid #DDD;
+}
+
+.articalDetail_content,.replyDetail_content {
+	width: 700px;
+	display: block;
+	word-break: break-all;
+	word-wrap: break-word;
+	margin-left: 30px;
+	margin-right: 6px;
+	margin-top: 10px;
+	min-height: 170px;
+}
+
+.replyDetailContainer {
+	width: 900px;
+	float: left;
+	border: 1px solid #DDD;
+}
+
+.replyDetail_main {
+	float: left;
+	width: 900px;
+	border: 1px solid #DDD;
+}
+
+.replyDetail_main div {
+	float: left;
+}
+
+.reply_main {
+	float: left;
+	width: 700px;
+	margin-left: 30px;
+}
+
+.replyDetail_group_btn {
+	width: 700px;
+}
+
+.replyDetail_group_btn span {
+	float: right;
+	margin-right: 3px;
+}
+
+.reply_btn a {
+	text-decoration: none;
+	color: #2D64B3;
+}
+
+.reply_btn a:hover {
+	text-decoration: underline;
+	color: #2D64B3;
+}
+
+.replyList {
+	border: 1px solid #DDD;
+	width: 700px;
+}
+
+.replyList_ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.replyList_ul li {
+	border-bottom: 1px dotted #D7D7D7;
+	margin-top: 10px;
+	float: left;
+	margin-left: 25px;
+}
+
+.reply_usr_img {
+	border: 1px solid #DDD;
+	height: 32px;
+	float: left;
+}
+
+.reply_usr_info {
+	width: 600px;
+	float: left;
+	margin-left: 10px;
+}
+
+.usr_info_reply {
+	float: left;
+	word-break: break-all;
+	word-wrap: break-word;
+	width: 600px;
+}
+
+.usr_reply {
+	text-align: right;
+	width: 600px;
+}
+
+.usr_reply span {
+	float: right;
+	margin-right: 5px;
+}
+
+.usr_reply_span a {
+	text-decoration: none;
+	color: #2D64B3;
+}
+
+.usr_reply_span a:hover {
+	text-decoration: underline;
+	color: #2D64B3;
+}
+
+.usr_reply_div {
+	float: left;
+	border: 1px solid #DDD;
+	margin-top: 10px;
+	margin-left: 25px;
+	width: 650px;
+	display: none;
+}
+
+.replyAreaContainer {
+	width: 900px;
+	float: left;
+	border: 1px solid #DDD;
+	background-color: #E5E5E5;
+}
+
+.replyAreaContainer_div {
+	border: 1px solid #DDD;
+	float: left;
+	margin-left: 130px;
+	margin-bottom: 30px;
+}
+
+.replyArea_title {
+	font-size: 14px;
+	font-weight: bold;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+.replyArea_content {
+	
+}
+
+.replyArea_btn,.usr_reply_div_btn {
+	color: #FFFFFF;
+	width: 70px;
+	height: 30px;
+	text-align: center;
+	background: url(../../image/communication/modellisttype_btn_out.png)
+		no-repeat scroll 0 0;
+	line-height: 30px;
+}
+
+.replyArea_btn_hover,.usr_reply_div_btn_hover {
+	color: #FFFFFF;
+	width: 70px;
+	height: 30px;
+	text-align: center;
+	background: url(../../image/communication/modellisttype_btn_over.png)
+		no-repeat scroll 0 0;
+	line-height: 30px;
+}

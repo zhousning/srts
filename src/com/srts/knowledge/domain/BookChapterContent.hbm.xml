@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+<hibernate-mapping package="com.srts.knowledge.domain">
+	<class name="BookChapterContent" table="klg_bookChapterContent">
+		<id name="id">
+			<generator class="native" />
+		</id>
+		<property name="contentName"/>
+		<property name="content"/>
+		<many-to-one name="chapter" class="BookChapter" column="chapterId"  cascade="all" lazy="false"/>
+	</class>
+</hibernate-mapping>
+
+
+

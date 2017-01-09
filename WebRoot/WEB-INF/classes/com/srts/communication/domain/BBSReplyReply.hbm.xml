@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+<hibernate-mapping package="com.srts.communication.domain">
+	<class name="BBSReplyReply" table="cmnc_BBSReplyReply">
+		<id name="id">
+			<generator class="native" />
+		</id>
+		<property name="replyContent"/>
+		<property name="relayDate"/>
+		<many-to-one name="usrReply" class="com.srts.system.domain.Sys_User" column="usrReplyId" lazy="false"/>
+		<many-to-one name="usr" class="com.srts.system.domain.Sys_User" column="usrId" lazy="false"/>
+		<many-to-one name="articalReply" class="BBSArticalReply" column="replyId" />
+	</class>
+</hibernate-mapping>
+
+
+

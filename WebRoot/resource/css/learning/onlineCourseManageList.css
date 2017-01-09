@@ -1,0 +1,176 @@
+.firstpanel{
+	height:400px;
+}
+.list_div { /*border:1px solid #DDD;*/
+	float: left;
+	width: 900px;
+	margin-left: 20px;
+}
+
+.list_title {
+	float: left;
+	width: 1100px;
+	/*border: 1px solid #DDD;*/
+	background-color:#c3e5e7; 
+	color:#006e6b;
+	
+	font-weight: bold;
+	margin-bottom: 2px;
+}
+
+.item_div {
+	float: left;
+	width: 1100px;
+	border-bottom:#c3e5e7 thin dashed;
+	margin-bottom: 2px;
+	
+}
+
+.list_content {
+	float: left;
+	width: 900px;
+}
+
+.list_title div,.item_div div {
+	float: left;
+	text-align: center;
+}
+.ne {
+	width: 300px;
+	border-left: 2px solid #fff;
+}
+
+.od {
+	width: 30px;
+	
+}
+
+.od img {
+	margin-top: 2px;
+}
+
+.dt {
+	width: 92px;
+	border-left: 2px solid #fff;
+}
+.dt1{
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.list_titlen{
+	width:1150px;
+}
+.item_divn{
+	width:1150px;
+}
+
+.dtcur {
+	cursor: pointer;
+}
+
+.list_ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+.item {
+	list-style: none;
+}
+
+.panel_sub_main {
+	margin: 20px;
+	height: auto;
+	border: solid;
+	border-width: thin;
+	border-color: #e0e0d8;
+}
+.title_sub_main {
+	color: #000;
+	font-weight:bold;
+	background-color: #e0e0d8;
+	background-image: url(../../image/learning/title_main_bg.png);
+	background-repeat: no-repeat;
+}
+.panel_sub {
+	margin: 20px;
+	/*width: 1000px;*/
+	border: solid;
+	border-width: thin;
+	border-color: #c3e5e7;
+	background-image: url(../../image/learning/transparent.png);
+}
+.title_sub {
+	color: #006e6b;
+	font-weight:bold;
+	background-color: #c3e5e7;
+	background-image: url(../../image/learning/title_sub_bg.png);
+	background-repeat: no-repeat;
+}
+.graph {
+	display: inline-table;
+	float: left;
+	width: 320px;
+}
+.content_margin{
+	height:200px;
+}
+/*
+.span_item{
+	margin-left:55%;
+}
+*/
+/*分页*/
+.pageDiv {
+	float: right;
+	width: 500px;
+}
+
+.page_ul {
+	list-style: none outside none;
+	margin: 0px;
+}
+
+.page_ul li {
+	float: left;
+	border: 1px solid #DDD;
+	margin: 5px;
+	width: 27px;
+	height: 27px;
+	text-align: center;
+}
+
+.page_ul li a{
+	border-bottom-left-radius: 4px;
+    border-left-width: 1px;
+    border-top-left-radius: 4px;
+    cursor: pointer;
+}
+
+.pagination ul > li:first-child > a{
+    border-bottom-left-radius: 4px;
+    border-left-width: 1px;
+    border-top-left-radius: 4px;
+}
+.pagination ul .disabled a, .pagination ul .disabled a:hover, .pagination ul .disabled a:focus {
+    background-color: transparent;
+    color: #999999;
+    cursor: default;
+}
+
+.pagination ul > li > a {
+    background-color: #ffffff;
+    float: left;
+    line-height: 20px;
+    padding: 4px 12px;
+    text-decoration: none;
+}
+
+.page_ul .total {
+	float: left;
+	width: 70px;
+	height: 27px;
+	text-align: center;
+}
+/*分页*/
+

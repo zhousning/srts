@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-lazy="false" package="com.srts.information.domain">
+ <class name="TrainNotice" table="info_trainNotice">
+  <id name="id">
+   <generator class="native"/>
+  </id>
+  <property name="noticeTitle"/>
+  <property name="noticeContent"/>
+  <property name="noticeAttach"/>
+  <property name="nonticeYear"/>
+  <property name="nonticeMonth"/>
+  <property name="nonticeDay"/>
+  <property name="noticeType"/>
+  <property name="establishDate"/>
+  <property name="acceptCompany"/>
+  <many-to-one  class="com.srts.system.domain.Sys_User"
+   column="usrId" lazy="false" name="user"/>
+   <property name="loadCount"/>
+	<many-to-one name="testInfo" column="testInfoId" class="com.srts.examination.domain.TestInfo" unique="true"></many-to-one>
+ </class>
+
+</hibernate-mapping>

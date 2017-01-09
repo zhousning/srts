@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin: 0px;
+}
+.filling {
+	display: block;
+	float: none;
+	clear: both;
+	width: 1px;
+	height: 1px;
+}
+
+.mainDiv {
+	width: 1210px;
+	font-size: 12px;
+	line-height: 25px;
+	color: #000;
+}
+
+.table {
+	font-size: 12px;
+}
+.table th {
+	line-height: 25px;
+	color: #006e6b;
+	background-color: #c3e5e7;
+}
+.table td {
+	line-height: 25px;
+	border-bottom: dashed;
+	border-bottom-width: thin;
+	border-bottom-color: #c3e5e7;
+	padding-left: 10px;
+	padding-right: 10px;
+	/*background-image: url(../../image/common/transparent.png);*/
+}

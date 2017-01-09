@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+<hibernate-mapping package="com.srts.examination.domain">	
+	<class name="QuestionScoreList" table="exm_questionScoreList">
+		<id name="id">
+			<generator class="native" />
+		</id>
+		<property name="type"/>
+		<property name="score"/>
+		<many-to-one name="testPaper" class="com.srts.examination.domain.TestPaper" column="testPaperId" cascade="all"></many-to-one>
+	</class>
+</hibernate-mapping>
+
+
+

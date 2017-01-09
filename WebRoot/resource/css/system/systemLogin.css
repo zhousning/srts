@@ -1,0 +1,8 @@
+@charset "utf-8";
+
+/* CSS Document */
+.leftMenu_rightBorder {
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #a1a5a8;
+}

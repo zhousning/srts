@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.srts.system.domain">
+
+	<class name="Sys_Role" table="sys_Role">
+		<id name="id">
+			<generator class="native" />
+		</id>
+
+		<property name="name"></property>
+		          
+			<set name="users" table="sys_user_roles" inverse="true" lazy="false">
+			<key column="roleId"></key>
+			<many-to-many class="Sys_User" column="userId" />
+		</set>
+		
+		<set name="privilieges" table="sys_role_pri" inverse="false" lazy="false">
+			<key column="roleId"></key>
+			<many-to-many class="Sys_Privilieges" column="priId"/>
+		</set>
+	
+  	<!--<set name="rolePrivilieges" >
+			<key column="roleId"></key>
+			<one-to-many class="Sys_Role_Priviliege" />
+		</set>
+		
+	--></class>
+
+</hibernate-mapping>
+
+
+

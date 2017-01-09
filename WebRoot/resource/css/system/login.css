@@ -1,0 +1,85 @@
+﻿@charset "utf-8";
+
+/* CSS Document */
+.login_logo {
+	background-image: url(../../image/system/login_logo.gif);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.login_logo_flash {
+	margin-top: 90px;
+}
+
+.login_bottom_bg {
+	background-image: url(../../image/system/login_bottom_bg.gif);
+	background-repeat: repeat-x;
+	background-position: top;
+	padding-top: 5px;
+}
+
+.login_bottom {
+	font-size: 12px;
+	color: #959394;
+}
+
+body {
+	overflow: hidden;
+}
+
+.login_window_username_bg {
+	background-image: url(../../image/system/login_window_username_bg.gif);
+	background-repeat: no-repeat;
+	background-position: 90px center;
+	padding-left: 150px;
+}
+
+.login_window_password_bg {
+	background-image: url(../../image/system/login_window_password_bg.gif);
+	background-repeat: no-repeat;
+	background-position: 90px center;
+	padding-left: 150px;
+}
+
+.login_window_textfield {
+	height: 28px;
+	width: 260px;
+	line-height: 25px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	background-color: transparent;
+	font-size: 16px;
+	color: #999999;
+	font-family: 微软雅黑;
+}
+
+.login_window_title {
+	font-size: 16px;
+	color: #666666;
+	font-family: "微软雅黑";
+	padding-left: 90px;
+}
+
+.login_button {
+	background-image: url(../../image/system/login_buttion_bg.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 44px;
+	width: 330px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	margin-left: 91px;
+	cursor: pointer;
+}
+
+.login_warnInfo {
+	font-size: 12px;
+	color: #666;
+	background-image: url(../../image/system/login_warnIcon.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+}

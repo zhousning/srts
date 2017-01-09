@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping  package="com.srts.system.domain">
+ <class name="Sys_Department" table="srts_sys_department">
+  <id name="id">
+   <generator class="native"/>
+  </id>
+  
+  <property generated="never" lazy="false" name="name"/>
+  
+  <set lazy="false" name="users" sort="unsorted">
+   <key column="departmentId"/>
+   <one-to-many class="Sys_User"/>
+  </set>
+  
+  <many-to-one class="com.srts.system.domain.Sys_Department"
+   column="parentdeptId" name="parentdept" lazy="false"/>
+   
+  <set cascade="delete" lazy="false" name="childrenDepartment"
+   order-by="id asc" sort="unsorted">
+   <key column="parentdeptId"/>
+   <one-to-many class="com.srts.system.domain.Sys_Department"/>
+  </set>
+
+ </class>
+</hibernate-mapping>

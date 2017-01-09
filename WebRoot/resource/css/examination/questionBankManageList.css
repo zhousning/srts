@@ -1,0 +1,8 @@
+.graph {
+	display: inline-table;
+	float: left;
+	width: 320px;
+}
+#queryResult {
+display: none;
+}

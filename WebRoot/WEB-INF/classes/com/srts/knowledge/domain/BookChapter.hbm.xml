@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+<hibernate-mapping package="com.srts.knowledge.domain">
+	<class name="BookChapter" table="klg_bookChapter">
+		<id name="id">
+			<generator class="native" />
+		</id>
+		<property name="chapterNum"/>
+		<property name="chapterName"/>
+		<many-to-one name="book" class="Book" column="bookId"  cascade="all" lazy="false"/>
+		<set name="contents" cascade="all"  lazy="false" order-by="id">
+			<key column="chapterId"/>
+			<one-to-many class="BookChapterContent"/>
+		</set>
+	</class>
+</hibernate-mapping>
+
+
+

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+<hibernate-mapping package="com.srts.examination.domain">
+	<class name="AnswerSheet" table="exm_answerSheet">
+		<id name="id">
+			<generator class="native" />
+		</id>
+		<property name="content"/>
+		<many-to-one name="testPaper" class="com.srts.examination.domain.TestPaper" column="testPaperId" cascade="all"/>
+		<many-to-one name="usr" class="com.srts.system.domain.Sys_User" column="usrId"/>
+	</class>
+</hibernate-mapping>
+
+
+

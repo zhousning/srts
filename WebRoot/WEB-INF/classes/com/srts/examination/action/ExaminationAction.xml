@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+<constant name="struts.i18n.encoding" value="utf-8"></constant>
+	<package name="ExamAction" namespace="/exam" extends="json-default">
+				<interceptors>
+	<interceptor name="checkPrivilege" class="com.srts.utils.interceptors.CheckLoginInterceptor"></interceptor>
+	<interceptor-stack name="myStack">
+	<interceptor-ref name="checkPrivilege"></interceptor-ref>
+	<interceptor-ref name="paramsPrepareParamsStack"></interceptor-ref>
+	</interceptor-stack>
+	</interceptors>
+	
+	<default-interceptor-ref name="myStack"></default-interceptor-ref>
+	
+	<global-results>
+	<result name="loginUi">/login.jsp</result>
+	<result name="error_privilege">/errorpage.jsp</result>
+	</global-results>
+
+		<action name="ExaminationManageAction_*" class="examinationManageAction" method="{1}">
+			<result name="examManageList">/WEB-INF/jsp/examination/examManageList.jsp</result>
+			<result name="disp">/WEB-INF/jsp/examination/examManageDisp.jsp</result>
+			<result name="examPaperManageList">/WEB-INF/jsp/examination/examPaperManageList.jsp</result>
+			<result name="examPaperManageDisp">/WEB-INF/jsp/examination/examPaperManageDisp.jsp</result>
+			<result name="examPaperCheckList">/WEB-INF/jsp/examination/examPaperCheckList.jsp</result>
+			<result name="examPaperCheckDisp">/WEB-INF/jsp/examination/examPaperCheckDisp.jsp</result>
+			<result name="insertUserTestScore" type="json"></result>
+			<result name="examPaperManageOut" type="json"></result>
+			<result name="examPaperManageShow" type="json"></result>
+			<result name="examPaperManageExport" type="stream">
+				<param name="contentType">application/msword</param>
+                <param name="inputName">inputStream</param>
+                <param name="contentDisposition">attachment;filename="examPaper.doc"</param>
+                <param name="bufferSize">40960</param>
+			</result>
+			<result name="examPaperCheckManageDisp">/WEB-INF/jsp/examination/examPaperCheckManageDisp.jsp</result>
+			<result name="examPeopleManageDisp">/WEB-INF/jsp/examination/examPeopleManageDisp.jsp</result>
+			<result name="examScoreManageDisp">/WEB-INF/jsp/examination/examScoreManageDisp.jsp</result>	
+			<result name="examScoreManageList">/WEB-INF/jsp/examination/examScoreManageList.jsp</result>		
+		</action>
+		
+		<action name="ExamScore_*" class="examScoreManAction" method="{1}">
+		<result name="examScoreManageList">/WEB-INF/jsp/examination/examScoreManageList.jsp</result>
+		<result name="examScoreManageDisp">/WEB-INF/jsp/examination/examScoreManageDisp.jsp</result>
+		<result name="toExamScoreManageList" type="redirect">ExamScore_examScoreManageList</result>
+		</action>
+		
+		<action name="ExaminationTrainAction_*" class="examinationTrainAction" method="{1}">
+			<result name="examTrainList">/WEB-INF/jsp/examination/examTrainList.jsp</result>
+			<result name="examTrainDisp">/WEB-INF/jsp/examination/examTrainDisp.jsp</result>
+		    <result name="trainTestAnalysis" type="json"></result>
+		    <result name="endTest">/WEB-INF/jsp/examination/endTest.jsp</result>
+		</action>
+		
+		<action name="ExaminationPeopleAction_*" class="examinationPeopleManageAction" method="{1}">
+			<result name="examTestList">/WEB-INF/jsp/examination/examTestList.jsp</result>
+			<result name="examTestDisp">/WEB-INF/jsp/examination/examTestDisp.jsp</result>
+			
+			
+			<result name="workNums" type="json"><param name="root">sum</param></result>
+			<result name="allWrokers" type="json"><param name="root">depAndWorkers</param></result>
+			<result name="randomWorker" type="json"><param name="root">sum</param></result>
+			<result name="userList" type="json"><param name="includeProperties">userList.*</param></result>
+			<result name="nameList" type="stream">
+				<param name="contentType">application/vnd.ms-excel</param>
+                <param name="inputName">inputStream</param>
+                <param name="contentDisposition">attachment;filename="nameList.xls"</param>
+                <param name="bufferSize">40960</param>
+			</result>
+		</action>
+	
+		<action name="ExaminationTestAction_*" class="examinationTestAction" method="{1}">
+			<result name="examTestList">/WEB-INF/jsp/examination/examTestList.jsp</result>
+			<result name="examTestDisp">/WEB-INF/jsp/examination/examTestDisp.jsp</result>
+			<result name="examTestAnalysis" type="json"></result>
+		</action>
+		
+		<action name="ExaminationGameHomeAction_*" class="examinationGameHomeAction" method="{1}">
+			<result name="examGameHomeList">/WEB-INF/jsp/examination/examGameHomeList.jsp</result>
+			<result name="examGameHomeDisp">/WEB-INF/jsp/examination/examGameHomeDisp.jsp</result> 
+			<result name="examGameHomeAnalysis" type="json"></result>
+		</action>
+		
+		<action name="QuestionBankManageAction_*" class="questionBankManageAction" method="{1}">
+			<result name="questionBankManageList">/WEB-INF/jsp/examination/questionBankManageList.jsp</result>
+			<result name="questionBankManageDisp">/WEB-INF/jsp/examination/questionBankManageDisp.jsp</result>
+			<result name="saveExcelFile2Database">/WEB-INF/jsp/examination/questionBankManageList.jsp</result>
+			<result name="questionBankManageAnalysis" type="json"></result>
+			<result name="deleteQuestionRes" type="json"></result>
+			<result name="updateQuestionRes" type="json"></result>
+			<result name="keyAndTypeResult">/WEB-INF/jsp/examination/questionBankSearchResManageDisp.jsp</result>
+		    <result name="updateQuestionPicRes">/WEB-INF/jsp/examination/questionBankManageDisp.jsp</result>
+            <result name="uploadQuestionBankRes">/WEB-INF/jsp/examination/questionBankManageList.jsp</result>
+		</action>
+	</package>
+</struts>

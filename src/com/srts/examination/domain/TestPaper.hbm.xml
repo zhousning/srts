@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+<hibernate-mapping package="com.srts.examination.domain">	
+	<class name="TestPaper" table="exm_testPaper">
+		<id name="id">
+			<generator class="native" />
+		</id>
+		<property name="major"/>
+		<property name="type"/>
+		<property name="exam_date"/>
+		<property name="exam_time"/>
+		<property name="end_time"/>
+		<property name="exam_timeLength"/>
+		<property name="createdate"/>
+		<property name="content"/>
+		<property name="testPaperName"/>
+		<property name="testCode"/>
+
+		<many-to-one name="testInfo" class="com.srts.examination.domain.TestInfo" column="testInfoId" cascade="all" unique="true"></many-to-one>
+	</class>
+</hibernate-mapping>
+
+
+

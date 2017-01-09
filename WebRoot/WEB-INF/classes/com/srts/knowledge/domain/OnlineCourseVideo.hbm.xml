@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+<hibernate-mapping package="com.srts.knowledge.domain">
+	<class name="OnlineCourseVideo" table="klg_coursevideo">
+		<id name="id">
+			<generator class="native" />
+		</id>
+		<property name="videoName"/>
+		<property name="videoIntro"/>
+		<property name="saveURL"/>
+		<property name="videoImgURL"/>
+		<property name="uploadDate"/>
+		<property name="viewCount"/>
+		<property name="loadCount"/>
+		<property name="uploadUsr"/>
+	</class>
+</hibernate-mapping>

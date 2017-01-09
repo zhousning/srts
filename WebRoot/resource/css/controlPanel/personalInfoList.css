@@ -1,0 +1,180 @@
+#selfExam {
+	display: inline-table;
+	float: left;
+	width: 340px;
+}
+#selfTest {
+	display: inline-table;
+	float: left;
+	width: 340px;
+}
+#selfGame {
+	display: inline-table;
+	float: left;
+	width: 340px;
+}
+
+
+#selfInfo {
+	display: inline-table;
+	float: left;
+	width: 360px;
+}
+#selfInfo_pic {
+	display: inline-table;
+	float: left;
+	width: 100px;
+}
+#selfInfo_info {
+	display: inline-table;
+	float: left;
+}
+#selfNotice {
+	display: inline-table;
+	float: left;
+	width: 700px;
+}
+
+
+#selfCourse {
+	display: inline-table;
+	float: left;
+	width: 530px;
+}
+#hotCourse {
+	display: inline-table;
+	float: left;
+	width: 530px;
+}
+
+
+#selfKlgBank {
+	display: inline-table;
+	float: left;
+	width: 530px;
+}
+#hotKlgBank {
+	display: inline-table;
+	float: left;
+	width: 530px;
+}
+
+
+#selfQA {
+	display: inline-table;
+	float: left;
+	width: 530px;
+}
+#hotQA {
+	display: inline-table;
+	float: left;
+	width: 530px;
+}
+#selfTopic {
+	display: inline-table;
+	float: left;
+	width: 530px;
+}
+#hotTopic {
+	display: inline-table;
+	float: left;
+	width: 530px;
+}
+
+
+#history1 {
+	display: inline-table;
+	float: left;
+	width: 340px;
+}
+#history2 {
+	display: inline-table;
+	float: left;
+	width: 340px;
+}
+#history3 {
+	display: inline-table;
+	float: left;
+	width: 340px;
+}
+
+
+
+div.tabC{
+	display:none;
+}
+
+div.tabD0 div.tabC0{display:block;}
+div.tabD1 div.tabC1{display:block;}
+div.tabD2 div.tabC2{display:block;}
+div.tabD3 div.tabC3{display:block;}
+div.tabD4 div.tabC4{display:block;}
+div.tabD5 div.tabC5{display:block;}
+
+
+/*th {
+	color: #006e6b;
+	background-color: #c3e5e7;
+}*/
+td {
+	font-size: 12px;
+	border-bottom: dashed;
+	border-bottom-width: thin;
+	border-bottom-color: #c3e5e7;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/*分页*/
+.pageDiv {
+	float: none;
+	width: 350px;
+}
+
+.page_ul {
+	list-style: none outside none;
+	margin: 0px;
+}
+
+.page_ul li {
+	float: left;
+	border: 1px solid #DDD;
+	margin: 5px;
+	width: 27px;
+	height: 27px;
+	text-align: center;
+}
+
+.page_ul li a{
+	border-bottom-left-radius: 4px;
+    border-left-width: 1px;
+    border-top-left-radius: 4px;
+    cursor: pointer;
+}
+
+.pagination ul > li:first-child > a{
+    border-bottom-left-radius: 4px;
+    border-left-width: 1px;
+    border-top-left-radius: 4px;
+}
+.pagination ul .disabled a, .pagination ul .disabled a:hover, .pagination ul .disabled a:focus {
+    background-color: transparent;
+    color: #999999;
+    cursor: default;
+}
+
+.pagination ul > li > a {
+    background-color: #ffffff;
+    float: left;
+    line-height: 20px;
+    padding: 4px 12px;
+    text-decoration: none;
+}
+
+.page_ul .total {
+	float: left;
+	width: 70px;
+	height: 27px;
+	text-align: center;
+}
+/*分页*/

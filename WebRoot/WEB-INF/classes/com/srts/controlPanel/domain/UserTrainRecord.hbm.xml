@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+<hibernate-mapping package="com.srts.controlPanel.domain">
+	<class name="UserTrainRecord" table="cp_userTrainRecord">
+		<id name="id">
+			<generator class="native" />
+		</id>
+		<property name="trainDate"/>
+		<property name="trainContent"/>
+		<property name="trainTimeLength"/>
+		<property name="trainOrgCompany"/>
+		<property name="trainRes"/>
+		<many-to-one name="usr" class="com.srts.system.domain.Sys_User" column="usrId"/>
+	</class>
+</hibernate-mapping>
+
+
+

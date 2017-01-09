@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+<hibernate-mapping package="com.srts.learning.domain">
+	<class name="OnlineExercise" table="lrn_onlineExercise">
+		<id name="id">
+			<generator class="native" />
+		</id>
+		<property name="exerciseSn"/>
+		<property name="exerciseDate"/>
+		<property name="exerciseName"/>
+		<property name="resultRight"/>
+		<property name="resultBlank"/>
+		<property name="resultWrong"/>
+		<property name="accuracyRate"/>
+		<property name="accuracyStability"/>
+		
+		<many-to-one name="user" class="com.srts.system.domain.Sys_User" column="userId"/>
+	</class>
+</hibernate-mapping>

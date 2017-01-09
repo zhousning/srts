@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+<hibernate-mapping package="com.srts.knowledge.domain">	
+	<class name="KnowledgeChain" table="klg_knowledgeChain">
+		<id name="id">
+			<generator class="native" />
+		</id>
+		<property name="searchnum"/>
+		<property name="explaination"/>
+		<many-to-one name="typicalCase" class="com.srts.knowledge.domain.TypicalCase" column="typicalCaseId"/>
+		<many-to-one name="typicalViolation" class="com.srts.knowledge.domain.TypicalViolation" column="typicalViolationId"/>
+		<many-to-one name="ruleLearning" class="com.srts.knowledge.domain.RuleLearning" column="ruleLearningId"/>
+		<many-to-one name="experience" class="com.srts.knowledge.domain.Experience" column="experienceId"/>
+	</class>
+</hibernate-mapping>
+
+
+

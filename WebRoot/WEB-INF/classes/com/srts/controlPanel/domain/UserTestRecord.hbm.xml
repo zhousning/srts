@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+<hibernate-mapping package="com.srts.controlPanel.domain">
+	<class name="UserTestRecord" table="cp_userTestRecord">
+		<id name="id">
+			<generator class="native" />
+		</id>
+		<property name="testDate"/>
+		<property name="testContent"/>
+		<property name="testScore"/>
+		<property name="testOrgCompany"/>
+		<property name="testTips"/>
+		<many-to-one name="usr" class="com.srts.system.domain.Sys_User" column="usrId"/>
+	</class>
+</hibernate-mapping>
+
+
+

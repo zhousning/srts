@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+<hibernate-mapping package="com.srts.learning.domain">
+	<class name="TrainCourseChapter" table="lrn_trainCourseChapter" lazy="false">
+		<id name="id">
+			<generator class="native" />
+		</id>
+		<property name="chapterId"/>
+		<property name="bookId"/>
+		<property name="bookName"/>
+		<property name="chapterNum"/>
+		<many-to-one name="trainCourse" class="TrainCourse" column="trainCourseId"   cascade="all"/>
+	</class>
+</hibernate-mapping>
+
+
+

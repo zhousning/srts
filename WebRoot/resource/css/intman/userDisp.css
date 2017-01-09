@@ -1,0 +1,12 @@
+table{
+	border: solid medium #008B8B;
+	border-collapse:collapse ;
+}
+
+tr{
+	border: solid thin #008B8B;
+}
+
+td{
+	border: solid thin #008B8B;
+}

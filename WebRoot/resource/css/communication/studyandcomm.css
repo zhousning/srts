@@ -1,0 +1,229 @@
+@charset "utf-8";
+/* CSS Document */
+
+.content{
+	position:absolute;
+	width:1034px;
+	height:1048px;
+	top: 55px;
+}
+.title1{
+	float:left;
+	width:100px;
+}
+.title2{
+	margin-left:5px;
+	float:left;
+	width:100px;
+}
+.STYLE1 {
+	font-size: 16px;
+	margin-top:5px;
+	margin-bottom:5px;
+	
+}
+.title{
+	
+	top:9px;
+	position:absolute;
+	left: 30px;
+	height: 38px;
+	width: 251px;
+}
+.operation{
+	top:61px;
+	position:absolute;
+	width:1080px;
+	height:53px;
+
+	left: 10px;
+}
+.operation_button{
+margin-left:-40px;
+	margin-top:5px;
+}
+.area{
+	top:65px;
+	position:absolute;
+	width:980px;
+	height:653px;
+	left: 1px;
+}
+.area1{
+	border: 1px solid #f1f1f1;
+	position:absolute;
+	width:312px;
+	height:198px;
+	left:-1px;
+	top:12px;
+	background-color:#C3E5E7;
+}
+.area2{
+	border: 1px solid #f1f1f1;
+	position:absolute;
+	width:315px;
+	height:200px;
+	left:336px;
+	top:12px;
+	background-color:#C3E5E7;
+}
+.area3{
+	border: 1px solid #f1f1f1;
+	position:absolute;
+	width:309px;
+	height:200px;
+	left:672px;
+	top:13px;
+	background-color:#C3E5E7;
+}
+.area4{
+	border: 1px solid #f1f1f1;
+	position:absolute;
+	width:311px;
+	height:200px;
+	left:-1px;
+	top:230px;
+	background-color:#C3E5E7;
+}
+.area5{
+	border: 1px solid #f1f1f1;
+	position:absolute;
+	width:316px;
+	height:200px;
+	left:335px;
+	top:233px;
+	background-color:#C3E5E7;
+}
+.area6{
+	border: 1px solid #f1f1f1;
+	position:absolute;
+	width:303px;
+	height:200px;
+	left:673px;
+	top:232px;
+	background-color:#C3E5E7;
+}
+.area7{
+	border: 1px solid #f1f1f1;
+	position:absolute;
+	width:310px;
+	height:200px;
+	left:-1px;
+	top:449px;
+	background-color:#C3E5E7;
+}
+.message{
+	position:absolute;
+	top:727px;
+	left: -2px;
+	width: 79px;
+}
+.show1{
+	position:absolute;
+	width:307px;
+	height:200px;
+	left: 2px;
+	top: 46px;
+	border: 1px solid #f1f1f1;
+	background-color:#C3E5E7;
+}
+.show3{
+	position:absolute;
+	width:302px;
+	height:200px;
+	left: 680px;
+	top: 46px;
+	border: 1px solid #f1f1f1;
+	background-color:#C3E5E7;
+}
+.show2{
+	position:absolute;
+	width:326px;
+	height:200px;
+	left: 333px;
+	top: 48px;
+	border: 1px solid #f1f1f1;
+	background-color:#C3E5E7;
+}
+.showT{
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.STYLE2 {float: left; width: 100px;  }
+.STYLE4 {font-size: 24px}
+.banner{
+	background-image: url(resource/image/examination/communication/bg.jpg);
+	position:absolute;
+	top:-28px;
+	left:847px;
+	width:120px;
+	height:130px;
+	float:right;
+}
+.update{
+	background-image: url(resource/image/examination/communication/11.jpg);
+		background-repeat:no-repeat;
+	cursor: pointer;
+	border: 0px;background-position: center;
+	width:100px;
+height:38px;
+}
+.add{
+	background-image: url(resource/image/examination/communication/11.jpg);
+		background-repeat:no-repeat;
+	cursor: pointer;
+	border: 0px;background-position: center;
+	width:100px;
+height:38px;
+}
+.condition1{
+	background-image: url(resource/image/examination/communication/11.jpg);
+		background-repeat:no-repeat;
+	cursor: pointer;
+	border: 0px;background-position: center;
+	width:100px;
+height:38px;
+}
+.condition2{
+	background-image: url(resource/image/examination/communication/11.jpg);
+		background-repeat:no-repeat;
+	cursor: pointer;
+	border: 0px;background-position: center;
+	width:100px;
+height:38px;
+}
+.condition3{
+	background-image: url(resource/image/examination/communication/11.jpg);
+		background-repeat:no-repeat;
+	cursor: pointer;
+	border: 0px;background-position: center;
+	width:100px;
+height:38px;
+}
+.find{
+	background-image: url(resource/image/examination/communication/11.jpg);
+		background-repeat:no-repeat;
+	cursor: pointer;
+	border: 0px;background-position: center;
+	width:100px;
+height:38px;
+}
+.delete{
+	background-image: url(resource/image/examination/communication/11.jpg);
+		background-repeat:no-repeat;
+	cursor: pointer;
+	border: 0px;background-position: center;
+	width:100px;
+height:38px;
+}
+.top{
+background-color:#f1f1f1;
+position:absolute;
+width:835px;
+}
+.STYLE6 {font-size: 12px}
+.i2{
+background-image: url(resource/image/examination/communication/11.jpg);
+	background-color:#transparent;
+	background-position: center;
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	
+	<constant name="struts.i18n.encoding" value="utf-8"></constant>
+
+
+	<package name="KnowledgeAction" namespace="/kldg" extends="json-default">
+
+			<interceptors>
+	<interceptor name="checkPrivilege" class="com.srts.utils.interceptors.CheckLoginInterceptor"></interceptor>
+	<interceptor-stack name="myStack">
+	<interceptor-ref name="checkPrivilege"></interceptor-ref>
+	<interceptor-ref name="paramsPrepareParamsStack"></interceptor-ref>
+	</interceptor-stack>
+	<interceptor-stack name="fileUp">
+		<interceptor-ref name="defaultStack">
+		<!--<param name="fileUpload.maximumSize">100000</param>
+	<param name="fileUpload.allowedTypes">image/png,image/bmp,image/jpg</param>
+		<param name="fileUpload.allowedExtensions">jpg,png,bmp</param>	-->
+		</interceptor-ref>
+		</interceptor-stack>
+	</interceptors>
+	
+	<default-interceptor-ref name="myStack"></default-interceptor-ref>
+	
+	<global-results>
+	<result name="loginUi">/login.jsp</result>
+	<result name="error_privilege">/errorpage.jsp</result>
+	</global-results>
+
+		<action name="KnowledgeBankAction_*" class="knowledgeBankAction" method="{1}">
+			<result name="knowledgeBankDisp">/WEB-INF/jsp/knowledge/klgBankDisp.jsp</result>
+			<result name="knowledgeBankList">/WEB-INF/jsp/knowledge/klgBankList.jsp</result>
+			<result name="klgBankAnalysis" type="json"></result>
+			<result name="uploadExperienceRes" type="json"></result>
+			<result name="updateKlgSearchRes" type="json"></result>			
+		</action>
+		
+		
+		
+		<action name="KnowledgeBankManageAction_*" class="knowledgeBankManageAction" method="{1}">
+			<result name="knowledgeBankManageDisp">/WEB-INF/jsp/knowledge/klgBankManageDisp.jsp</result>
+			<result name="knowledgeBankManageList">/WEB-INF/jsp/knowledge/klgBankManageList.jsp</result>
+			<result name="knowledgeBankUploadDisp">/WEB-INF/jsp/knowledge/klgBankUploadDisp.jsp</result>
+			<result name="editUi">/WEB-INF/jsp/knowledge/klgEditUi.jsp</result>
+			<result name="toList" type="redirect">KnowledgeBankManageAction_knowledgeBankManageDisp.action?klgType=${klgType}</result>
+			<result name="toDisp" type="redirect">KnowledgeBankManageAction_knowledgeBankManageDisp?klgType=${klgType}</result>
+			<result name="input" type="redirect">/WEB-INF/jsp/knowledge/klgBankUploadDisp.jsp?klgType=${klgType}</result>
+	</action>
+		
+		<action name="KnowledgeChainAction_*" class="knowledgeChainAction" method="{1}">
+			<result name="knowledgeChainDisp">/WEB-INF/jsp/knowledge/klgChainDisp.jsp</result>
+			<result name="knowledgeChainList">/WEB-INF/jsp/knowledge/klgBankManageList.jsp</result>
+			<result name="knowledgeChainUploadDisp">/WEB-INF/jsp/knowledge/klgBankUploadDisp.jsp</result>
+		</action>
+	</package>
+</struts>

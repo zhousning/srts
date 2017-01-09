@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-image: url(../../image/system/top_bg.png);
+	background-repeat: no-repeat;
+}
+
+mainDiv {
+	width:1440px;
+	margin: 0px;
+	padding: 0px;
+}
+
+.menu {
+	width: 1440px;
+	height: 35px;
+	line-height: 35px;
+	color: #fff;
+	font-size: 12px;
+	text-align: right;
+	text-decoration: none;	
+}
+.banner {
+	width: 1440px;
+	height: 149px;
+	color: #fff;
+	font-size: 12px;
+}
+.welcome {
+	width: 1440px;
+	height: 60px;
+	line-height: 40px;
+	color: #000;
+	font-size: 12px;
+	text-align: right;
+}
+
+
+.topMenu_welcomeInfo {
+	font-size: 12px;
+	color: #FFF;
+	padding-right: 10px;
+}
+.topMenu_rightTitle {
+	color: #FFF;
+	font-size: 15px;
+	font-family: 微软雅黑;
+	background-image: url(../../image/system/topMenu_rightTitle_bg_tiao.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.topMenu_rightTitle_click {
+	color: #83eeeb;
+	font-size: 15px;
+	font-family: 微软雅黑;
+	background-image: url(../../image/system/topMenu_rightTitle_bg_tiao.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.topMenu_datetimeInfo {
+	font-size: 12px;
+	color: #000;
+	padding-left: 30px;
+	background-image: url(../../image/system/topMenu_datatimeInfoIcon.gif);
+	background-repeat: no-repeat;
+	background-position: 15px;
+}
+.topMenu_logo {
+	background-image: url(../../image/system/logo.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+.topMenu_logo_flash {
+	margin-top: 20px;
+}

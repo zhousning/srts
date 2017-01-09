@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+<hibernate-mapping package="com.srts.communication.domain">
+	<class name="ProblemInfo" table="cmnc_probleminfo">
+		<id name="id">
+			<generator class="native" />
+		</id>
+		<property name="problemDesc"/>
+		<property name="problemDescAdd"/>
+		<property name="postDate"/>
+		<property name="validDateFrom"/>
+		<property name="validDateTo"/>
+		<property name="viewCount"/>
+		<property name="answerCount"/>
+		<property name="labels"/>
+		<many-to-one name="usr" class="com.srts.system.domain.Sys_User" column="usrId" lazy="false"/>
+<!-- 	<set name="labels" cascade="all" inverse="true" lazy="false">
+			<key column="problemId"/>
+			<one-to-many class="ProblemLabel"/>
+		</set>   	cascade="all" inverse="false"
+-->		<set name="answerInfos"  cascade="remove" lazy="false">
+			<key column="problemId"/>
+			<one-to-many class="AnswerInfo"/>
+		</set>
+	</class>
+</hibernate-mapping>
+
+
+

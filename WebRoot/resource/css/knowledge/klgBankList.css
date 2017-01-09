@@ -1,0 +1,40 @@
+#tab {
+	display: inline-table;
+	float: left;
+	width: 700px;
+	cursor: pointer;
+}
+
+#right {
+	display: inline-table;
+	float: left;
+	width: 400px;
+}
+
+#ad1 {
+	display: inline-table;
+	float: left;
+	width: 530px;
+}
+
+#ad2 {
+	display: inline-table;
+	float: left;
+	width: 530px;
+}
+
+/*
+.tabC{
+	display:none;
+}
+*/
+#tab1,#tab2,#tab1,#tab3,#tab4,#tab5{
+	display:none;
+}
+div.tabD0 div.tabC0{display:block;}
+div.tabD1 div.tabC1{display:block;}
+div.tabD2 div.tabC2{display:block;}
+div.tabD3 div.tabC3{display:block;}
+div.tabD4 div.tabC4{display:block;}
+div.tabD5 div.tabC5{display:block;}
+

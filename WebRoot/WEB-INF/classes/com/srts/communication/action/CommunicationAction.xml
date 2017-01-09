@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<constant name="struts.i18n.encoding" value="utf-8"></constant>
+	<package name="CommAction" namespace="/commu" extends="json-default">
+					<interceptors>
+	<interceptor name="checkPrivilege" class="com.srts.utils.interceptors.CheckLoginInterceptor"></interceptor>
+	<interceptor-stack name="myStack">
+	<interceptor-ref name="checkPrivilege"></interceptor-ref>
+	<interceptor-ref name="paramsPrepareParamsStack"></interceptor-ref>
+	</interceptor-stack>
+	</interceptors>
+	
+	<default-interceptor-ref name="myStack"></default-interceptor-ref>
+	
+	<global-results>
+	<result name="loginUi">/login.jsp</result>
+	<result name="error_privilege">/errorpage.jsp</result>
+	</global-results>
+		
+		<action name="ProblemCommuAction_*" class="problemCommuAction" method="{1}">
+			<result name="toSubmitAnswerPage" type="json"></result>
+			<result name="toSelfProblemCommDisp" type="json"></result>
+			<result name="problemCommList">/WEB-INF/jsp/communication/problemCommList.jsp</result>
+			<result name="problemCommDisp">/WEB-INF/jsp/communication/problemCommDisp.jsp</result>
+			<result name="selfProblemCommAsk">/WEB-INF/jsp/communication/selfProblemCommAsk.jsp</result>
+			<result name="selfProblemCommList">/WEB-INF/jsp/communication/selfProblemCommList.jsp</result>
+			<result name="selfProblemCommDisp">/WEB-INF/jsp/communication/selfProblemCommDisp.jsp</result>
+			<result name="selfProblemCommDispEnd">/WEB-INF/jsp/communication/selfProblemCommDispEnd.jsp</result>
+		</action>
+		
+		<action name="OnlineForumAction_*" class="onlineForumAction" method="{1}">
+			<result name="onlineForumModelList">/WEB-INF/jsp/communication/onlineForumModelList.jsp</result>
+			<result name="onlineForumModelDisp">/WEB-INF/jsp/communication/onlineForumModelDisp.jsp</result>
+			<result name="myOnlineArticalList">/WEB-INF/jsp/communication/myOnlineArticalList.jsp</result>
+			<result name="myOnlineArticalDisp">/WEB-INF/jsp/communication/myOnlineArticalDisp.jsp</result>
+			<result name="toMyOnlineArticalPost">/WEB-INF/jsp/communication/myOnlineArticalPost.jsp</result>
+			<result name="myOnlineArticalPost" type="json"></result>
+			<result name="toOnlineForumModelDisp" type="json"></result>
+			<result name="rePlayReplay" type="json"></result>
+		</action>
+		<action name="ProblemManageAction_*" class="problemManageAction" method="{1}">
+			<result name="problemCommManage">/WEB-INF/jsp/communication/problemCommManage.jsp</result>
+		</action>
+		<action name="OnlineForumArticalManageAction_*" class="onlineForumArticalManageAction" method="{1}">
+			<result name="onlineForumArticalManage">/WEB-INF/jsp/communication/onlineForumArticalManage.jsp</result>
+		</action>
+	</package>
+</struts>

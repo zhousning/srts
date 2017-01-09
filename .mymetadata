@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="srts"
+  id="myeclipse.1401928787104"
+  context-root="/srts"
+  j2ee-spec="5.0"
+  archive="srts.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

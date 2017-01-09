@@ -1,0 +1,135 @@
+.mainDiv {
+	width: 1150px;
+	font-size: 12px;
+	line-height: 25px;
+	color: #000;
+}
+
+.panel {
+	margin: 20px;
+	display: inline-table;
+	float: left;
+	height: 200px;
+	width: 800px;
+}
+
+.item1 {
+	background-color: #f1f1f1;
+	padding: 10px;
+	width: 800px;
+	float: left;
+}
+
+.item2 {
+	background-color: #f9f9f9;
+	padding: 10px;
+	width: 800px;
+	float: left;
+}
+
+.content {
+	display: block;
+	clear: both;
+	float: none;
+	margin-bottom:5px;
+}
+
+.content a {
+	text-decoration: none;
+	color: #2D64B3;
+}
+
+.time {
+	display: inline-table;
+	float: left;
+	width: 150px;
+	margin-left:10px;
+}
+
+.highlight {
+	display: inline-table;
+	float: left;
+	width: 10px;
+	color: #c5002e;
+	font-weight: bold;
+}
+
+.text {
+	display: inline-table;
+	float: left;
+	width: 60px;
+	margin-left:10px;
+}
+
+.bubble {
+	display: inline-table;
+	float: left;
+	width: 26px;
+	color: #c5002e;
+	font-weight: bold;
+	background-image: url(../../image/communication/bubble.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	text-align: center;
+}
+
+.bubble_btn {
+	display: inline-table;
+	float: left;
+	width: 30px;
+	color: #f7ab00;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.btn_accept {
+	display: inline-table;
+	float: left;
+	width: 52px;
+}
+
+.btn_ask2 {
+	display: inline-table;
+	float: left;
+	width: 79px;
+}
+
+.input_block {
+	padding: 10px;
+	display: none;
+	clear: both;
+	float: none;
+}
+.input_submit{
+	width:53px;
+	margin-top:10px;
+}
+.problemList_page {
+	float: right;
+	width: 450px;
+}
+
+.problemList_page_ul {
+	list-style: none outside none;
+	margin: 0px;
+}
+
+.problemList_page_ul .page {
+	float: left;
+	border: 1px solid #DDD;
+	background: repeat scroll 0 0 #DDD;
+	margin: 5px;
+	width: 27px;
+	height: 27px;
+	text-align: center;
+}
+
+.problemList_page_ul .total {
+	float: left;
+	border: 1px solid #DDD;
+	background: repeat scroll 0 0 #DDD;
+	margin: 5px;
+	width: 37px;
+	height: 27px;
+	text-align: center;
+}

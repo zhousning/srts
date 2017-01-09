@@ -1,0 +1,120 @@
+/*
+.studyBook_main_books {
+	height:260px;
+	width:220px;
+	margin-left: 100px;
+	
+}
+
+.studyBook_simple_message{
+	margin-top: 20px;
+	font-size: 18px;
+
+}
+
+.studyBook_simple_sub{
+	margin-top: 10px;
+}
+.studyBook_simple_span{
+	width:80px;
+}
+*/
+textarea{
+	width:300px; 
+	height:100px; 
+	resize:none;
+	overflow-y:hidden;
+}
+.content_margin{
+	height: 300px;
+}
+.panel_sub {
+	margin: 20px;
+	width: 250px;
+	border: solid;
+	border-width: thin;
+	border-color: #c3e5e7;
+	background-image: url(../../image/learning/transparent.png);
+}
+/*
+.middle_part{
+	width: 1000px;
+}
+*/
+.test_chapters{
+		/*width:900px;*/
+		margin-top: 5px;
+		float:left;
+		margin-left: 100px;
+		width: 250px;
+}
+.o {
+	float: left;
+	
+	margin-bottom: 10px;
+	border-bottom: 1px solid #DDD;
+	padding-bottom: 3px;
+}
+
+.oo {
+	float: left;
+	max-height: 200px;
+	height: 230px;
+	width: 250px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	scrollbar-arrow-color: #f4ae21; 
+	scrollbar-face-color: #009b83; 
+	scrollbar-3dlight-color: #009b83; 
+	scrollbar-highlight-color: #009b83; 
+	scrollbar-shadow-color: #009b83; 
+	scrollbar-darkshadow-color: #009b83; 
+	scrollbar-track-color: #FFF; 
+	/*scrollbar-base-color:#f8f8f8;*/
+}
+.list_ul1{
+	margin: 0px;
+	padding: 0px;
+}
+.list_ul1 li {
+	width: 260px;
+	list-style: none;
+	float: left;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	height: 25px;
+}
+.t {
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+.select_btn {
+	width: 20px;
+	float: left;
+	border: 1px solid #DDD;
+}
+
+.select_item {
+	margin-left: 10px;
+	width: 180px;
+	float: left;
+	font: 700 15px "Microsoft YaHei", SimHei, arial;
+}
+.test_count{
+	margin-top:5px;
+	float:left;
+	width:250px;
+	margin-left:50px;
+}
+.bottom_button{
+	float: left;
+	margin-left: 350px;
+}
+.span_item {
+	margin-left: 20px;
+	margin-right: 20px;
+	
+	font: 700 20px "Microsoft YaHei", SimHei, arial;
+	
+}

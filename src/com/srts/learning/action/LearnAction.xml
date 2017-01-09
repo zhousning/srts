@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<constant name="struts.i18n.encoding" value="utf-8"></constant>
+	<constant name="struts.multipart.maxSize" value="1000000000"></constant>
+	<package name="LearnAction" namespace="/learning" extends="json-default">
+			<interceptors>
+	<interceptor name="checkPrivilege" class="com.srts.utils.interceptors.CheckLoginInterceptor"></interceptor>
+	<interceptor-stack name="myStack">
+	<interceptor-ref name="checkPrivilege"></interceptor-ref>
+	<interceptor-ref name="paramsPrepareParamsStack"></interceptor-ref>
+	</interceptor-stack>
+	</interceptors>
+	
+	<default-interceptor-ref name="myStack"></default-interceptor-ref>
+	
+		<global-results>
+	<result name="loginUi">/login.jsp</result>
+	<result name="error_privilege">/errorpage.jsp</result>
+	</global-results>
+		<action name="OnlineCourseAction_*" class="onlineCourseAction" method="{1}">
+			<result name="onlineCourseList">/WEB-INF/jsp/learning/onlineCourseList.jsp</result>
+			<result name="onlineCourseDisp">/WEB-INF/jsp/learning/onlineCourseDisp.jsp</result>
+			<result name="chapterContentDisp" type="json"></result>
+			<result name="updateOnlineCourseStudy" type="json"></result>
+		</action>
+		<action name="ErrorSetAction_*" class="errorSetAction" method="{1}">
+			<result name="errorSetList">/WEB-INF/jsp/learning/errorSetList.jsp</result>
+			<result name="errorSetDisp">/WEB-INF/jsp/learning/errorSetDisp.jsp</result>
+			<result name="errorSetAnalysis" type="json"></result>
+			<result name="SetAnswerAndId" type="json"></result>
+		</action>
+		<action name="OnlineExerciseAction_*" class="onlineExerciseAction" method="{1}">
+			<result name="onlineExerciseList">/WEB-INF/jsp/learning/onlineExerciseList.jsp</result>
+			<result name="onlineExerciseDisp">/WEB-INF/jsp/learning/onlineExerciseDisp.jsp</result>
+			<result name="onlineExerciseChpater" type="json"></result>
+			<result name="onlineExerciseAnswerCheck" type="json"></result>
+			<result name="onlineExerciseAnalysis" type="json"></result>
+		</action>
+		<action name="StudyCourseAction_*" class="studyCourseAction" method="{1}">
+			<!-- StudyCourseDisp -->
+			<result name="studyCourseList">/WEB-INF/jsp/learning/studyCourseList.jsp</result>
+			<result name="studyCourseDisp">/WEB-INF/jsp/learning/studyCourseDisp.jsp</result>
+			<result name="studyCourseAnalysis" type="json"></result>
+			<result name="studyChapterList" type="json"></result>
+			<!-- StudyCourseDisp -->
+			<result name="studyChapterContent" type="json"></result>
+			<result name="studyBookOtherChapter">/WEB-INF/jsp/learning/studyCourseDisp.jsp</result>
+		</action>
+		<action name="TrainCourseAction_*" class="trainCourseAction" method="{1}">
+			<result name="trainCourseList">/WEB-INF/jsp/learning/trainCourseList.jsp</result>
+			<result name="trainCourseDisp">/WEB-INF/jsp/learning/trainCourseDisp.jsp</result>
+			<result name="trainCourseAnalysis" type="json"></result>
+			<result name="totrainCourseList" type="redirect">TrainCourseAction_trainCourseList.action?userId=${userId}</result>
+			<!-- TrainCourseDisp -->
+			<result name="trainCourseContent" type="json"></result>
+			<result name="chapterItemContent" type="json"></result> 
+		</action>
+		<action name="OnlineCourseManageAction_*" class="onlineCourseManageAction" method="{1}">
+			<param name="savePath">./resource/templete/learning/book_ppt_video</param>
+			<result name="onlineCourseManageList">/WEB-INF/jsp/learning/onlineCourseManageList.jsp</result>
+			<result name="onlineCourseManageDisp">/WEB-INF/jsp/learning/onlineCourseManageDisp.jsp</result>
+			<result name="onlineCourseManagePost">/WEB-INF/jsp/learning/onlineCourseManagePost.jsp</result>
+			<result name="onlineCourseManagePostSus" type="redirect">/learning/OnlineCourseManageAction_onlineCourseManageList.action</result>
+			<result name="queryCurrentPage" type="json"></result>
+			<result name="getCourseTurnAfterPage" type="json"></result>
+			<result name="getCourseTurnForwardPage" type="json"></result>
+			<result name="courseTypeCount" type="json"></result>
+			<result name="deleteOnlineCourse">/WEB-INF/jsp/learning/onlineCourseManageList.jsp</result>
+			<result name="updateOnlineCourse" type="json"></result>
+		</action>
+		<action name="OnlineCourseTraceManageAction_*" class="onlineCourseTraceManageAction" method="{1}">
+			<result name="onlineCourseTraceList">/WEB-INF/jsp/learning/OnlineCourseTraceManageList.jsp</result>
+			<result name="onlineCourseTraceDisp">/WEB-INF/jsp/learning/OnlineCourseTraceManageDisp.jsp</result>
+			<result name="queryCurrentPage" type="json"></result>
+			<result name="getCourseTurnAfterPage" type="json"></result>
+			<result name="getCourseTurnForwardPage" type="json"></result>
+			<result name="getOnlineCourseNoticeTitle" type="json"></result>
+			
+			
+			<result name="queryTraceQueryByOption" type="json"></result>
+			<result name="queryCurrentPageQBO" type="json"></result>
+			<result name="courseTurnForwardPageQBO" type="json"></result>
+			<result name="courseTurnAfterPageQBO" type="json"></result>
+			
+			<result name="userStudyTraceRecord" type="json"></result>
+			<result name="studyTraceStatistics" type="json"></result>
+		</action>
+	</package>
+</struts>

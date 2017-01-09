@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-size: 12px;
+}
+
+
+.item {
+	background-color: #006e6b;
+	background-repeat: no-repeat;
+	margin: 30px;
+	height: 40px;
+	width: 500px;
+	line-height: 40px;
+	color: #fff;
+	cursor: pointer;
+}
+.subitem {
+	background-color: #61c1b6;
+	height: 30px;
+	width: 500px;
+	margin-left: 50px;
+	line-height: 30px;
+	font-size: 12px;
+	color: #000;
+	text-decoration: none;
+	border: 0;
+}
+.subsubitem {
+	background-color: #c3e5e7;
+	margin-left: 50px;
+	padding: 10px;
+	width: 80px;
+	height: 20px;
+	line-height: 20px;
+	color: #000;
+}
+
+.item_content {
+	display: none;
+}
+.subitem_content {
+	display: none;
+}
+
+.choose {
+	margin: 30px;
+}

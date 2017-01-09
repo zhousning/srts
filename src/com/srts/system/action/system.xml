@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="system" namespace="/system" extends="json-default">
+			<interceptors>
+	<interceptor name="checkPrivilege" class="com.srts.utils.interceptors.CheckLoginInterceptor"></interceptor>
+	<interceptor-stack name="myStack">
+	<interceptor-ref name="checkPrivilege"></interceptor-ref>
+	<interceptor-ref name="paramsPrepareParamsStack"></interceptor-ref>
+	</interceptor-stack>
+	</interceptors>
+	
+	<default-interceptor-ref name="myStack"></default-interceptor-ref>
+	
+	<global-results>
+	<result name="loginUi">/login.jsp</result>
+	<result name="error_privilege">/errorpage.jsp</result>
+	</global-results>
+		
+		<action name="systemIndexAction_*" class="systemIndexAction" method="{1}">
+			<result name="topMenu">/WEB-INF/jsp/system/systemIndexAction/topMenu.jsp
+			</result>
+			<result name="leftMenu">/WEB-INF/jsp/system/systemIndexAction/leftMenu.jsp
+			</result>
+			<result name="homePage">/WEB-INF/jsp/system/systemIndexAction/homePage.jsp
+			</result>
+			<result name="statusBar">/WEB-INF/jsp/system/systemIndexAction/statusBar.jsp
+			</result>
+		</action>
+		
+		<action name="departmentAction_*" class="departmentAction" method="{1}">
+		<result  name="topDepList">/WEB-INF/jsp/system/departmentAction/DepartmentList.jsp</result>
+		<result name="toList" type="redirect">departmentAction_findTopDepList</result>
+		
+		<result name="depInfo" type="json"><param name="root">depInfo</param></result>
+		<result name="toFindTopList" type="json"><param name="root">result</param></result>
+		</action>
+		
+		<action name="userAction_*" class="userAction" method="{1}">
+		<result  name="list">/WEB-INF/jsp/system/userAction/UserList.jsp</result>
+		<result name="show">/WEB-INF/jsp/system/userAction/UserDisp.jsp</result>
+	    <result name="toList" type="redirect">userAction_userList</result>
+	    <result name="toShow" type="redirect">userAction_userList</result>
+	    
+	    <!-- <result name="userRoleList">/WEB-INF/jsp/system/userAction/serUserRole.jsp</result> -->
+		</action>
+		
+		<action name="loginLogoutAction_*" class="loginLogoutAction" method="{1}">
+		<result name="logouUi">/logou.jsp</result>
+		<result name="toIndex" type="redirect">/systemIndex.jsp</result>
+		</action>
+		
+		<action name="roleAction_*" class="roleAction" method="{1}">
+		<result  name="roleList">/WEB-INF/jsp/system/roleAction/roleList.jsp</result>
+		<result name="roleDisp">/WEB-INF/jsp/system/roleAction/roleDisp.jsp</result>
+		<result name="setPriviliegeUi">/WEB-INF/jsp/system/roleAction/setPrivilegeUi.jsp</result>
+		<result name="toRoleList" type="redirect">roleAction_roleList</result>
+		
+		</action>
+		
+	</package>
+	
+	
+</struts>

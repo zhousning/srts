@@ -1,0 +1,431 @@
+.forumModelList {
+	float: left;
+	width: 880px;
+	border: 1px solid #DDD;
+	height: 110px;
+	border: 1px solid #ddd;
+}
+
+.modelChange_btn_left {
+	background-image: url(../../image/communication/model_change_btn.png);
+	background-position: 0 center;
+	width: 19px;
+	float: left;
+	height: 110px;
+}
+
+.modelChange_btn_left_over {
+	background-image: url(../../image/communication/model_change_btn.png);
+	background-position: 63px center;
+	width: 19px;
+	float: left;
+	height: 110px;
+}
+
+.modelChange_btn_right {
+	background-image: url(../../image/communication/model_change_btn.png);
+	background-position: -34px center;
+	float: right;
+	width: 19px;
+	height: 110px;
+}
+
+.modelChange_btn_right_over {
+	background-image: url(../../image/communication/model_change_btn.png);
+	background-position: 19px center;
+	float: right;
+	width: 19px;
+	height: 110px;
+}
+
+.modelInfo {
+	overflow: hidden;
+	float: left;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 2px;
+	width: 880px;
+	height: 110px;
+}
+
+.modelInfo_ul {
+	width: 880px;
+	position: relative;
+	overflow: hidden;
+	clear: both; *
+	zoom: 1;
+	padding: 0px;
+	margin: 0px;
+	height: 110px;
+}
+
+.modelInfo_ul li {
+	width: 190px;
+	height: 100px;
+	background: #ccc;
+	margin: 4px;
+	list-style: none;
+	float: left;
+}
+
+.modelInfoDetail {
+	float: left;
+	height: 100px;
+	width: 190px;
+	background: url(../../image/communication/model_bg.png) no-repeat scroll
+		0 0;
+	text-decoration: none;
+}
+
+.modelInfoDetail_main {
+	float: right;
+	width: 120px;
+	height: 95px;
+}
+
+.modelTitle {
+	float: left;
+	font-family: STHeiti, "Microsoft Yahei", "微软雅黑", Arial, sans-serif;
+	font-size: 14px;
+	color: #444444;
+	width: 110px;
+}
+
+.modelArticalCount {
+	float: left;
+	color: #999999;
+	margin-left: 15px;
+	width: 95px;
+}
+
+.forumHotArticalList {
+	border: 1px solid #DDD;
+	float: left;
+	width: 880px;
+	margin-top: 10px;
+}
+
+.forumHotArticalTitle {
+	float: left;
+	width: 800px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 15px;
+}
+
+.type {
+	float: left;
+	margin-left: 10px;
+	width: 70px;
+	height: 30px;
+	text-align: center;
+	background-image:
+		url(../../image/communication/modellisttype_btn_over.png);
+	color: #000000;
+	line-height: 29px;
+	cursor: pointer;
+}
+
+.type_hover {
+	float: left;
+	margin-left: 10px;
+	width: 70px;
+	height: 30px;
+	text-align: center;
+	background-image:
+		url(../../image/communication/modellisttype_btn_out.png);
+	color: #FFFFFF;
+	line-height: 29px;
+	cursor: pointer;
+}
+
+.type_right {
+	float: right;
+}
+
+.type_right a {
+	text-decoration: none;
+	color: #2D64B3;
+}
+
+.type_right a:hover {
+	text-decoration: underline;
+	color: #2D64B3;
+}
+
+/*****************/
+.hotArticalMain {
+	float: left;
+}
+
+.latestArticalMain {
+	float: left;
+	display: none;
+}
+
+/*****************/
+.hotArtical {
+	float: left;
+	border: 1px solid #DDD;
+	width: 600px;
+	margin-left: 15px;
+	margin-bottom: 10px;
+}
+
+.latestArtical {
+	float: left;
+	border: 1px solid #DDD;
+	width: 600px;
+	margin-left: 15px;
+	margin-bottom: 10px;
+}
+
+.hotArticalContent {
+	float: left;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.articalmodel {
+	float: left;
+	width: 550px;
+	height: 25px;
+	background: url(../../image/communication/modelartical_order_bg.png)
+		no-repeat scroll 0 0;
+}
+
+.articalmodel span {
+	margin-left: 60px;
+	font: 700 14px "Microsoft YaHei", SimHei, arial;
+	font: 700 16px "Microsoft YaHei", SimHei, arial;
+}
+
+.articaltitle {
+	float: left;
+	width: 550px;
+}
+
+.articaltitle a {
+	text-decoration: none;
+	color: #2D64B3;
+	font: 700 13px "Microsoft YaHei", SimHei, arial;
+	font: 700 16px "Microsoft YaHei", SimHei, arial;
+}
+
+.articaltitle a:hover {
+	text-decoration: underline;
+}
+
+.articaltitle span {
+	float: right;
+	display: block;
+	width: 50px;
+	border: 1px solid #DDD;
+	background-color: #DDD;
+	color: #F54646;
+	text-align: center;
+}
+
+.articalcontent {
+	float: left;
+	width: 550px;
+}
+
+.articalcontent a {
+	text-decoration: none;
+	color: #000000;
+}
+
+.articalcontent a:hover {
+	text-decoration: none;
+	color: #2D64B3;
+}
+
+.articalusrinfo {
+	float: left;
+	width: 550px;
+}
+
+.articalusrinfo span {
+	margin-left: 10px;
+	color: #000000;
+}
+
+/**/
+.articalPageMain {
+	float: left;
+	width: 600px;
+	margin-left: 15px;
+	margin-bottom: 10px;
+}
+
+.articalPage_page_ul {
+	list-style: none outside none;
+	margin: 0px;
+}
+
+.articalPage_page_ul .page {
+	float: left;
+	border: 1px solid #DDD;
+	background: repeat scroll 0 0 #DDD;
+	margin: 5px;
+	width: 27px;
+	height: 27px;
+	text-align: center;
+}
+
+.articalPage_page_ul .total {
+	float: left;
+	border: 1px solid #DDD;
+	background: repeat scroll 0 0 #DDD;
+	margin: 5px;
+	width: 37px;
+	height: 27px;
+	text-align: center;
+}
+
+.articalAnalisisList {
+	width: 210px;
+	margin-top: 10px;
+	position: absolute;
+	top: 173px;
+	left: 660px;
+}
+
+.articalAnalisisList1 {
+	margin-bottom: 10px;
+	border: 1px solid #DDD;
+	width: 205px;
+}
+
+.articalAnalisisList2 {
+	border: 1px solid #DDD;
+	width: 205px;
+	height: 155px��
+}
+
+.analisisTitle {
+	border: 0px none;
+	height: 28px;
+	background: none repeat scroll 0% 0% #F7F7F7;
+}
+
+.articalAnalisisList1_main {
+	
+}
+
+.analisis_ul {
+	margin-left: 5px;
+	padding: 0px;
+}
+
+.analisis_ul li {
+	width: 150px;
+	height: 30px;
+	list-style: none;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.order {
+	width: 20px;
+	height: 30px;
+	display: block;
+	float: left;
+	background: url(../../image/communication/aritcalAnalisis_order_bg.png)
+		no-repeat scroll 0 0;
+	text-align: center;
+	margin-right: 5px;
+	font-size: 14px;
+	color: #FFFFFF;
+}
+
+.usr {
+	display: block;
+	float: left;
+	margin-right: 5px;
+}
+
+.count {
+	display: block;
+	float: left;
+}
+
+/********************/
+.articalAnalisisList2_main {
+	border: 1px solid red;
+	width: 204px;
+}
+
+.analisis_change_ul {
+	padding: 0px;
+	/******/
+	width: 190px;
+	position: relative;
+	overflow: hidden;
+	clear: both; *
+	zoom: 1;
+	padding: 0px;
+	margin: 0px;
+	margin-left: 5px;
+	height: 110px;
+}
+
+.analisis_change_ul li { /*****/
+	width: 190px;
+	height: 100px;
+	background: #ccc;
+	margin: 4px;
+	list-style: none;
+	float: left;
+}
+
+.analisisTitleChange {
+	float: right;
+	width: 60px;
+	margin-top: 5px;
+}
+
+.turn_pre {
+	background: url(../../image/communication/articalAnalisisChange.png)
+		no-repeat scroll 0 0;
+	background-position: 0 0;
+	cursor: pointer;
+	display: block;
+	float: left;
+	height: 15px;
+	width: 15px;
+	margin-left: 7px;
+}
+
+.turn_next {
+	background: url(../../image/communication/articalAnalisisChange.png)
+		no-repeat scroll 0 0;
+	background-position: -26px 0;
+	cursor: pointer;
+	display: block;
+	float: left;
+	height: 15px;
+	width: 15px;
+	margin-left: 7px;
+}
+
+.usrImg {
+	border: 1px solid #DDD;
+	width: 80px;
+	height: 100px;
+	float: left;
+}
+
+.usr_right {
+	position: relative;
+	top: 0px;
+	left: 10px;
+}
+
+.modelarea {
+	font-family: STHeiti, "Microsoft Yahei", "微软雅黑", Arial, sans-serif;
+	font-size: 14px;
+	color: #444444;
+}
+/*************************/

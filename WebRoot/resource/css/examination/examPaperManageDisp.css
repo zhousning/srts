@@ -1,0 +1,447 @@
+@charset "utf-8";
+.mainDiv {
+	margin: 20px;
+	width: 1150px;
+	font-size: 12px;
+	line-height: 25px;
+	color: #000;
+}
+.container {
+	float: left;
+	width: 900px;
+}
+
+.title {
+	font: 700 14px "Microsoft YaHei", SimHei, arial;
+	margin-top: 4px;
+	/*margin-bottom:4px;*/
+	border-bottom: 1px solid #DDD;
+}
+
+.content {
+	margin-top: 5px;
+	margin-left: 120px;
+}
+
+.panelDiv {
+	float: left;
+	width: 900px;
+	margin-top: 30px;
+}
+
+.panel1,.panel2,.panel3 {
+	display: none;
+}
+
+.navigation {
+	float: left;
+	width: 900px;
+}
+
+.navigation {
+	width: 160px;
+	float: left;
+	display: block;
+}
+
+.navigation_name {
+	text-align: center;
+	font: 700 16px "Microsoft YaHei", SimHei, arial;
+	color: white;
+	height: 40px;
+	line-height: 40px;
+	cursor: pointer;
+}
+
+.name1 {
+	background: url(../../image/examination/navigation_dark_1.png)
+		no-repeat scroll 0 0;
+}
+
+.name2 {
+	background: url(../../image/examination/navigation_light_1.png)
+		no-repeat scroll 0 0;
+}
+
+.name3 {
+	background: url(../../image/examination/navigation_dark_2.png)
+		no-repeat scroll 0 0;
+}
+
+.name4 {
+	background: url(../../image/examination/navigation_light_2.png)
+		no-repeat scroll 0 0;
+}
+
+.nav {
+	margin-top: 5px;
+	margin-right: 2px;
+	height: 3px;
+	background: url(../../image/examination/nav2.png) no-repeat scroll 0
+		0;
+}
+
+.nav1 {
+	margin-top: 5px;
+	margin-right: 2px;
+	height: 3px;
+	background: url(../../image/examination/nav1.png) no-repeat scroll 0
+		0;
+}
+
+.container1 {
+	float: left;
+	width: 900px;
+}
+
+.btn_group{
+	margin-top:10px;
+}
+
+.list {
+	float: left;
+}
+
+.list_div1 {
+	float: left;
+	width: 610px;
+	min-height: 140px;
+	max-height: 570px;
+	height: 570px;
+	overflow-y: auto;
+	scrollbar-arrow-color: #f4ae21; 
+	scrollbar-face-color: #009b83; 
+	scrollbar-3dlight-color: #009b83; 
+	scrollbar-highlight-color: #009b83; 
+	scrollbar-shadow-color: #009b83; 
+	scrollbar-darkshadow-color: #009b83; 
+	scrollbar-track-color: #FFF;
+	/*scrollbar-base-color:#f8f8f8; */
+}
+
+.list_div2 {
+	float: left;
+	margin-left: 15px;
+	width: 250px;
+}
+
+.list_ul,.list_ul1,.list_ul2,.choose_ul,.choose_ul1 {
+	margin: 0px;
+	padding: 0px;
+}
+
+.list_ul li {
+	width: 100px;
+	border: 1px solid #DDD;
+	list-style: none;
+	float: left;
+	margin-left: 40px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.icon {
+	float: left;
+	width: 100px;
+	background: url(../../image/examination/bookIcon.png) no-repeat
+		scroll 0 0;
+	height: 120px;
+}
+
+.icon span {
+	float: right;
+}
+
+.list_ul1 li {
+	width: 260px;
+	list-style: none;
+	float: left;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	height: 25px;
+}
+
+.o {
+	float: left;
+	margin-top: 2px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #DDD;
+	padding-bottom: 3px;
+}
+
+.oo {
+	float: left;
+	max-height: 200px;
+	height: 200px;
+	width: 250px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	scrollbar-arrow-color: #f4ae21; 
+	scrollbar-face-color: #009b83; 
+	scrollbar-3dlight-color: #009b83; 
+	scrollbar-highlight-color: #009b83; 
+	scrollbar-shadow-color: #009b83; 
+	scrollbar-darkshadow-color: #009b83; 
+	scrollbar-track-color: #FFF; 
+	/*scrollbar-base-color:#f8f8f8;*/
+}
+
+.t {
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+.select_btn {
+	width: 20px;
+	float: left;
+	border: 1px solid #DDD;
+}
+
+.select_item {
+	margin-left: 20px;
+	width: 180px;
+	float: left;
+	font: 700 15px "Microsoft YaHei", SimHei, arial;
+}
+
+.container2 {
+	float: left;
+	width: 900px;
+	margin-bottom: 20px;
+	border-top:1px solid #DDD;
+}
+
+.pre_btn,.next_btn {
+	border: 1px solid #DDD;
+	text-align: center;
+	width: 70px;
+	float: right;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.list_div_3{
+	float: left;
+	width: 900px;
+}
+
+.list_div3 {
+	float: left;
+	width: 900px;
+	min-height: 140px;
+	max-height: 500px;
+	height: 500px;
+}
+
+.list_ul2 li {
+	list-style: none;
+	float: left;
+	width: 650px;
+	margin-bottom: 3px;
+}
+
+.ty,.ty1,.ty2{
+	float: left;
+	width: 900px;
+	margin-top: 10px;
+	margin-left: 40px;
+}
+
+.ty2 div{
+	float: left;
+	text-align: center;
+	margin-right:10px;
+}
+
+.ty div,.li_item div {
+	border: 1px solid #DDD;
+	float: left;
+	text-align: center;
+}
+
+.ratio {
+	width: 40px;
+	padding-top: 5px;
+}
+
+.type,.num,.score,.total {
+	width: 140px;
+}
+
+.ni {
+	width: 50px;
+	font-size: 13px;
+}
+
+.si {
+	width: 50px;
+	font-size: 13px;
+}
+
+.ti {
+	width: 50px;
+	font-size: 13px;
+}
+
+.list_div4 {
+	border-right: 1px solid #DDD;
+	width: 450px;
+	float: left;
+}
+
+.select_title {
+	width: 450px;
+	float: left;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.select_img,.select_img_si {
+	width: 20px;
+	float: left;
+	margin-top: 5px;
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+.select_w {
+	float: left;
+	margin-left: 40px;
+}
+
+.select_cont {
+	float: left;
+}
+
+.select_cont select {
+	height: 25px;
+	width: 100px;
+	margin-top: 3px;
+}
+
+.select_btn1 {
+	border: 1px solid #DDD;
+	width: 70px;
+	float: right;
+	text-align: center;
+	margin-right: 3px;
+	cursor:pointer;
+}
+
+.select_content {
+	width: 450px;
+	border-top: 3px solid #DDD;
+	height: 570px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	scrollbar-arrow-color: #f4ae21; 
+	scrollbar-face-color: #009b83; 
+	scrollbar-3dlight-color: #009b83;
+	scrollbar-highlight-color: #009b83;
+	scrollbar-shadow-color: #009b83; 
+	scrollbar-darkshadow-color: #009b83; 
+	scrollbar-track-color: #FFF; 
+	
+	/*scrollbar-base-color:#f8f8f8;*/
+}
+
+.s_m,.s_j,.s_b,.s_saqs {
+	display: none;
+}
+
+.select_ul {
+	margin: 10px 0 0 0;
+	padding: 0px;
+}
+
+.select_ul li,.deltais_ul li {
+	list-style: none;
+}
+
+.cnt {
+	float: left;
+	width: 405px;
+	word-break: break-all;
+	font: 700 13px "Microsoft YaHei", SimHei, arial;
+	margin-bottom: 5px;
+}
+
+.list_div5 {
+	float: left;
+	width: 449px;
+}
+
+.select_title1 {
+	width: 449px;
+	float: left;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.select_qut {
+	float: left;
+	width: 449px;
+	border-top: 3px solid #DDD;
+	height: 570px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	scrollbar-arrow-color: #f4ae21;
+	scrollbar-face-color: #009b83; 
+	scrollbar-3dlight-color: #009b83; 
+	scrollbar-highlight-color: #009b83; 
+	scrollbar-shadow-color: #009b83; 
+	scrollbar-darkshadow-color: #009b83; 
+	scrollbar-track-color: #FFF; 
+	/*scrollbar-base-color:#f8f8f8;*/
+}
+
+.single,.muitle,.judge,.blank,.saqs {
+	
+}
+
+.title1 {
+	font: 700 14px "Microsoft YaHei", SimHei, arial;
+	margin-top: 4px;
+	border-top: 1px solid #DDD;
+	text-align: center;
+}
+
+.select_details {
+	float: left;
+	width: 449px;
+	margin-top: 10px;
+}
+
+.deltais_ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+.list_div6 {
+	float: left;
+	width: 900px;
+	border: 1px solid #DDD :
+}
+
+.out_btn {
+	border: 1px solid #DDD;
+	width: 900px;
+	float: left;
+}
+
+.outputPaper_btn {
+	border: 1px solid #DDD;
+	float: right;
+	width: 100px;
+	text-align: center;
+	cursor: pointer;
+	margin-right: 20px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+.out_file {
+	float: left;
+	border: 1px solid #DDD;
+	width: 900px;
+}

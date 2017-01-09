@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<constant name="struts.i18n.encoding" value="utf-8"></constant>
+	<package name="controlPanelAction" namespace="/ctro" extends="json-default">
+		
+					<interceptors>
+	<interceptor name="checkPrivilege" class="com.srts.utils.interceptors.CheckLoginInterceptor"></interceptor>
+	<interceptor-stack name="myStack">
+	<interceptor-ref name="checkPrivilege"></interceptor-ref>
+	<interceptor-ref name="paramsPrepareParamsStack"></interceptor-ref>
+	</interceptor-stack>
+	</interceptors>
+	
+	<default-interceptor-ref name="myStack"></default-interceptor-ref>
+	
+	<global-results>
+	<result name="loginUi">/login.jsp</result>
+	<result name="error_privilege">/errorpage.jsp</result>
+	</global-results>
+		
+		<action name="PersonalCenterAction_*" class="personalCenterAction" method="{1}">
+			<result name="personalInfoList">/WEB-INF/jsp/controlPanel/personalInfoList.jsp</result>
+			<result name="personalPasswordChangeList">/WEB-INF/jsp/controlPanel/personalPasswordChange.jsp</result>
+			<result name="personalTraceList">/WEB-INF/jsp/controlPanel/personalTraceList.jsp</result>
+			<result name="personalEstmList">/WEB-INF/jsp/controlPanel/personalEstmList.jsp</result>
+			<result name="personalCourseList">/WEB-INF/jsp/controlPanel/personalCourseList.jsp</result>
+			<result name="personalKnowledgeList">/WEB-INF/jsp/controlPanel/personalKnowledgeList.jsp</result>
+			<result name="personalMessageList">/WEB-INF/jsp/controlPanel/personalMessageList.jsp</result>
+			<result name="personPasswordChange" type="json"></result>
+		</action>
+	</package>
+</struts>

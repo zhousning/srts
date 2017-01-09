@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+<hibernate-mapping package="com.srts.communication.domain">
+	<class name="AnswerAsk" table="cmnc_answerask">
+		<id name="id">
+			<generator class="native" />
+		</id>
+		<property name="askContent"/>
+		<property name="askDate"/>
+		<property name="answerContent"/>
+		<property name="answerDate"/>
+		<many-to-one name="answer" class="AnswerInfo" column="answerId"/>
+	</class>
+</hibernate-mapping>
+
+
+

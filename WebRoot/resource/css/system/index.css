@@ -1,0 +1,156 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+.index_top_bg {
+	background-image: url(../../image/system/index_top_bg.gif);
+	background-repeat: repeat-x;
+}
+.index_banner {
+	background-image: url(../../image/system/index_banner1.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.index_banner_navigation_bg {
+	background-image: url(../../image/system/index_banner_navigation_bg.png);
+	background-repeat: repeat-x;
+	font-size: 16px;
+	color: #FFF;
+	font-family: 微软雅黑;
+}
+.index_logo {
+	background-image: url(../../image/system/index_logo.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.index_userLogin {
+	background-image: url(../../image/system/index_userLoginIcon.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 55px;
+	color: #FFF;
+	font-family: "微软雅黑";
+	font-size: 16px;
+}
+.index_userLogin a {
+	color: #FFF;
+	text-decoration: none;
+}
+.index_userLogin a:hover {
+	text-decoration: underline;
+}
+.index_bottom_bg {
+	background-image: url(../../image/system/login_bottom_bg.gif);
+	background-repeat: repeat-x;
+	background-position: top;
+	padding-top: 5px;
+}
+.index_bottom {
+	font-size: 12px;
+	color: #959394;
+}.index_information_bg {
+	background-image: url(../../image/system/index_message_bg.png);
+	background-repeat: repeat-x;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #c9c9c9;
+	border-bottom-color: #c9c9c9;
+	border-left-color: #c9c9c9;
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: #646464;
+}
+.index_information_title {
+	font-size: 16px;
+	color: #c5002e;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #c9c9c9;
+	font-family: "微软雅黑";
+	background-image: url(../../image/system/index_title_bg.gif);
+	background-repeat: no-repeat;
+	background-position: 20px bottom;
+	padding-left: 25px;
+}
+.index_information_more {
+	font-size: 14px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #c9c9c9;
+	color: #666666;
+	padding-right: 20px;
+	font-family: "微软雅黑";
+}
+.index_information_more a {
+	color: #646464;
+	text-decoration: none;
+}
+.index_information_number1 {
+	color: #FFFFFF;
+	background-color: #c5002e;
+	font-family: "微软雅黑";
+}
+.index_information_number2 {
+	color: #FFFFFF;
+	background-color: #f7ab00;
+	font-family: "微软雅黑";
+}
+.index_information_number3 {
+	color: #FFFFFF;
+	background-color: #009b83;
+	font-family: "微软雅黑";
+}
+.index_information_number4 {
+	color: #FFFFFF;
+	background-color: #a18a3c;
+	font-family: "微软雅黑";
+}
+.index_information_more a:hover {
+	text-decoration: underline;
+}
+.index_information_content {
+	background-color: #e0e0d8;
+	font-family: "微软雅黑";
+	padding-left: 5px;
+}
+.index_information_contentNumber {
+	background-color: #e0e0d8;
+	font-family: "微软雅黑";
+	padding-left: 5px;
+	color: #C5002E;
+}
+.index_information_content a {
+	color: #000;
+	text-decoration: none;
+}
+.index_information_content a:hover {
+	text-decoration: underline;
+}
+.index_messageIcon {
+	background-image: url(../../image/system/index_messageIcon.gif);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.index_newsIcon {
+	background-image: url(../../image/system/index_newsIcon.gif);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.index_downloadIcon {
+	background-image: url(../../image/system/index_downloadIcon.gif);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.index_dynamicIcon {
+	background-image: url(../../image/system/index_dynamicIcon.gif);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+#pieChart {
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #c9c9c9;
+}

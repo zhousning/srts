@@ -1,0 +1,102 @@
+.container {
+	border: 1px solid #DDD;
+	width: 800px;
+	float: left;
+}
+
+.item {
+	float: left;
+	margin-bottom: 2px;
+}
+
+.title {
+	width: 800px;
+	float: left;
+	height: 25px;
+	line-height: 15px;
+	font: 700 16px "Microsoft YaHei", SimHei, arial;
+	border-top: 1px solid #DDD;
+}
+
+.content {
+	margin-left: 90px;
+	float: left;
+	width: 650px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+.selected {
+	border: 1px solid #DDD;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	width: 160px;
+	font: 13px "Microsoft YaHei", SimHei, arial;
+	float: left;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	cursor: default;
+}
+
+.selected_title {
+	float: left;
+}
+
+.selected_btn {
+	float: right;
+}
+
+.selected_item {
+	width: 600px;
+	z-index: 100;
+	display: none;
+	position: absolute;
+	float: left;
+	top: 82px;
+	left: 114px;
+}
+
+.content_ul {
+	padding: 0px;
+	margin: 0px;
+	width: 155px;
+	border: 1px solid #DDD;
+	background-color: #FFFFFF;
+}
+
+.content_ul li {
+	padding-top: 2px;
+	list-style: none;
+	font: 13px "Microsoft YaHei", SimHei, arial;
+	cursor: pointer;
+}
+
+.li_hover {
+	background-color: #DDD;
+}
+
+.area1 {
+	width: 630px;
+	height: 50px;
+	overflow-y:auto;
+}
+
+.area2 {
+	width: 630px;
+	height: 100px;
+	overflow-y:auto;
+}
+
+.btn_item {
+	float: left;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	width: 600px;
+}
+
+.btn {
+	float: right;
+	border: 1px solid #DDD;
+	text-align: center;
+	width: 70px;
+}

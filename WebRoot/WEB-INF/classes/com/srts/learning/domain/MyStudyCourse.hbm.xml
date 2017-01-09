@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+<hibernate-mapping package="com.srts.learning.domain">
+	<class name="MyStudyCourse" table="lrn_myStudyCourse">
+		<id name="id">
+			<generator class="native" />
+		</id>
+		<property name="startTime"/>
+		<property name="endTime"/>
+		<property name="sumTime"/>
+		<property name="lastStudyTime"/>
+		<many-to-one name="usr" class="com.srts.system.domain.Sys_User" column="usrId" lazy="false"/>
+		<property name="studyRecord"/>
+		<many-to-one name="train" class="Train" column="trainId"/>
+		<property name="studyContent"/>
+		<many-to-one name="book" class="com.srts.knowledge.domain.Book" column="bookId" lazy="false"/>
+	</class>
+</hibernate-mapping>

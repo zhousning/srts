@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+<hibernate-mapping package="com.srts.knowledge.domain">	
+	<class name="Experience" table="klg_experience">
+		<id name="id">
+			<generator class="native" />
+		</id>
+		<property name="content"/>
+		<property name="statement"/>
+		<property name="explaination"/>
+		<property name="uploaddate"/>
+		<property name="updatedate"/>
+		<property name="checkeddate"/>
+		<many-to-one name="user" class="com.srts.system.domain.Sys_User" column="usrId"/>
+		<property name="searchnum"/>
+	</class>
+</hibernate-mapping>
+
+
+

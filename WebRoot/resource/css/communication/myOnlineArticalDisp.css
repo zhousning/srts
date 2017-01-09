@@ -1,0 +1,165 @@
+.container {
+	border: 1px solid #DDD;
+	width: 900px;
+	float: left;
+}
+
+.container_title {
+	float: left;
+	width: 900px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.container_title div {
+	float: left;
+}
+
+.type {
+	float: left;
+	margin-left: 10px;
+	width: 70px;
+	height: 30px;
+	text-align: center;
+	background-image:
+		url(../../image/communication/modellisttype_btn_over.png);
+	color: #000000;
+	line-height: 29px;
+	cursor: pointer;
+}
+
+.type_hover {
+	float: left;
+	margin-left: 10px;
+	width: 70px;
+	height: 30px;
+	text-align: center;
+	background-image:
+		url(../../image/communication/modellisttype_btn_out.png);
+	color: #FFFFFF;
+	line-height: 29px;
+	cursor: pointer;
+}
+
+.container_Content {
+	border-top: 1px solid #DDD;
+	float: left;
+	width: 900px;
+}
+
+.container_Content1 {
+	float: left;
+	width: 850px;
+}
+
+.item {
+	border: 1px solid #DDD;
+	width: 850px;
+	float: left;
+	margin-bottom: 10px;
+	margin-left: 15px;
+	margin-top: 5px;
+}
+
+.item_content {
+	float: left;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.title_item {
+	float: left;
+	width: 850px;
+	margin-top: 5px;
+}
+
+.title_item a {
+	text-decoration: none;
+	color: #2D64B3;
+	font: 700 13px "Microsoft YaHei", SimHei, arial;
+	font: 700 16px "Microsoft YaHei", SimHei, arial;
+}
+
+.title_item a:hover {
+	text-decoration: underline;
+}
+
+.title_item span {
+	float: right;
+	display: block;
+	width: 70px;
+	border: 1px solid #DDD;
+	background-color: #DDD;
+	color: #F54646;
+	text-align: center;
+	margin-right: 20px;
+}
+
+.info_item {
+	float: left;
+	width: 850px;
+}
+
+.info_item span {
+	margin-right: 10px;
+	color: #000000;
+}
+
+.content_item {
+	float: left;
+	width: 700px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.page_Main {
+	float: right;
+	width: 450px;
+	margin-left: 15px;
+	margin-bottom: 10px;
+}
+
+.page_ul {
+	list-style: none outside none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.page_ul .page {
+	float: left;
+	border: 1px solid #DDD;
+	background: repeat scroll 0 0 #DDD;
+	margin: 5px;
+	width: 27px;
+	height: 27px;
+	text-align: center;
+}
+
+.page_ul .total {
+	float: left;
+	border: 1px solid #DDD;
+	background: repeat scroll 0 0 #DDD;
+	margin: 5px;
+	width: 37px;
+	height: 27px;
+	text-align: center;
+}
+
+.container_Content2 {
+	float: left;
+	width: 850px;
+	display: none;
+}
+
+.container_Content3 {
+	float: left;
+	width: 850px;
+	display: none;
+}
+
+.container_Content4 {
+	float: left;
+	width: 850px;
+	display: none;
+}

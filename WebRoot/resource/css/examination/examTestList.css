@@ -1,0 +1,17 @@
+.info_sub {
+	display: inline-table;
+	float: left;
+	width: 300px;
+	background-image: url(../../image/examination/transparent.png);
+}
+#info_main {
+	background-image: url(../../image/examination/bg.jpg);
+}
+#startExam {
+	text-align: right;
+}
+.graph {
+	display: inline-table;
+	float: left;
+	width: 300px;
+}

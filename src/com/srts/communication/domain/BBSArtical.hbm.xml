@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+<hibernate-mapping package="com.srts.communication.domain">
+	<class name="BBSArtical" table="cmnc_bbsartical">
+		<id name="id">
+			<generator class="native" />
+		</id>
+		<property name="articalTile"/>
+		<property name="articalContent"/>
+		<property name="articalDate"/>
+		<property name="viewCount"/>
+		<property name="replyCount"/>
+		<property name="weight"/>
+		<many-to-one name="usr" class="com.srts.system.domain.Sys_User" column="usrId" lazy="false"/>
+		<many-to-one name="model" class="BBSModel" column="modelID" lazy="false"/>
+	</class>
+</hibernate-mapping>
+
+
+

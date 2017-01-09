@@ -1,0 +1,169 @@
+.problemSearchContainer {
+	border: 1px solid #DDD;
+	width: 800px;
+	height: 50px;
+	float: left;
+}
+
+.problemSearchInput {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+	width: 450px; height：24px;
+	font-size: 16px;
+}
+
+.problemAsk {
+	
+}
+
+/**/
+.problemListTitle {
+	border: 1px solid #DDD;
+	width: 800px;
+	float: left;
+}
+
+.problemListTitle_main {
+	margin: 0px 20px 0px 30px;
+	padding: 5px;
+}
+
+.problemListTitle_main a {
+	float: right;
+}
+
+/**/
+.problemListContainer {
+	border: 1px solid #DDD;
+	width: 800px;
+	float: left;
+}
+
+.problemListCon_title {
+	width: 800px;
+}
+
+.problemListCon_title_ul {
+	list-style: none outside none;
+	margin: 5px 10px 5px;
+}
+
+.problemListCon_title_ul li {
+	float: left;
+	width: 80px;
+	text-align: center;
+}
+
+/**/
+.problemList_container {
+	width: 800px;
+	float: left;
+}
+
+.problemList_container_ul {
+	list-style: none outside none;
+	margin: 20px;
+	float: left;
+}
+
+.problemList_container_ul li {
+	border-bottom: 1px dashed #EBEBEB;
+	height: 55px;
+	width: 600px;
+}
+
+.problemList_container_prob {
+	margin-left: 20px;
+}
+
+.problemList_container_prob a {
+	text-decoration: none;
+	color: #2D64B3;
+}
+
+.problemList_container_other {
+	
+}
+
+.problemList_container_other .problemList_container_other1 {
+	float: left;
+	margin-left: 40px;
+}
+
+.problemList_container_other .problemList_container_other2 {
+	float: right;
+}
+
+.problemList_container_other span {
+	margin-right: 10px;
+}
+
+/**/
+.problemList_page {
+	float: right;
+	width: 450px;
+}
+
+.problemList_page_ul {
+	list-style: none outside none;
+	margin: 0px;
+}
+
+.problemList_page_ul .page {
+	float: left;
+	border: 1px solid #DDD;
+	background: repeat scroll 0 0 #DDD;
+	margin: 5px;
+	width: 27px;
+	height: 27px;
+	text-align: center;
+}
+
+.problemList_page_ul .total {
+	float: left;
+	border: 1px solid #DDD;
+	background: repeat scroll 0 0 #DDD;
+	margin: 5px;
+	width: 37px;
+	height: 27px;
+	text-align: center;
+}
+
+/**/
+.problemAnalisisContainer {
+	width: 250px;
+	position: absolute;
+	top: 120px;
+	left: 850px;
+}
+
+.problemAnalisis1 {
+	margin-bottom: 20px;
+	border: 1px solid #DDD;
+	width: 250px;
+	/*float:left;*/
+}
+
+.problemAnalisis2 {
+	margin-bottom: 20px;
+	border: 1px solid #DDD;
+	width: 250px;
+	/*float:left;*/
+}
+
+.problemAnalisis3 {
+	border: 1px solid #DDD;
+	width: 250px;
+	/*float:left;*/
+}
+
+.problemAnalisis_title {
+	border: 0px none;
+	height: 28px;
+	background: none repeat scroll 0% 0% #F7F7F7;
+}
+
+.problemAnalisis_ul {
+	list-style: none outside none;
+	margin: 0px;
+	width: 250px;
+}

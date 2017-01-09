@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document */
+
+.panel_main {
+	margin: 20px;
+	height: auto;
+	border: solid;
+	border-width: thin;
+	border-color: #e0e0d8;
+	background-image: url(../../image/controlPanel/bg.jpg);
+}
+.panel_sub {
+	margin: 20px;
+	border: solid;
+	border-width: thin;
+	border-color: #c3e5e7;
+	background-image: url(../../image/controlPanel/transparent.png);
+}
+.content_margin {
+	margin: 10px;
+}
+.panel_margin {
+	margin: 20px;
+}
+.title_main {
+	color: #000;
+	font-weight:bold;
+	background-color: #e0e0d8;
+	background-image: url(../../image/controlPanel/title_main_bg.png);
+	background-repeat: no-repeat;
+}
+.title_sub {
+	color: #006e6b;
+	font-weight:bold;
+	background-color: #c3e5e7;
+	background-image: url(../../image/controlPanel/title_sub_bg.png);
+	background-repeat: no-repeat;
+}
+.title {
+	font-weight: bold;
+}
+
+
+
+.span_item {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.viewdetail {
+	text-align: right;
+}
+
+
+
+.grey1 {
+	background-color:#f1f1f1;
+}
+.grey2 {
+	background-color:#f9f9f9;
+}

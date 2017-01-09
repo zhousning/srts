@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+<hibernate-mapping package="com.srts.examination.domain">	
+	<class name="TestPeople" table="exm_testPeople">
+		<id name="id">
+			<generator class="native" />
+		</id>
+		<!--<many-to-one name="train" class="com.srts.learning.domain.Train" column="trainId" cascade="all"></many-to-one>
+		--><many-to-one name="usr" class="com.srts.system.domain.Sys_User" column="usrId" cascade="all" lazy="false"></many-to-one>
+		<many-to-one name="testInfo" class="com.srts.examination.domain.TestInfo" column="testInfoId" cascade="all" lazy="false"></many-to-one>
+	</class>
+</hibernate-mapping>
+
+
+

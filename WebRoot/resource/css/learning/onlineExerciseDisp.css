@@ -1,0 +1,58 @@
+.left {
+	display: inline-table;
+	float: left;
+	width: 100px;
+}
+.right {
+	display: inline-table;
+	float: left;
+	width: 1000px;
+}
+.center {
+	text-align:center;
+}
+
+
+.content{
+	border:1px solid #DDD;
+}
+.show_type_sub div{
+	float:left;
+	width:70px;
+	text-align: center;
+}
+.question_area{
+}
+.question_cont{
+	margin: 10px;
+}
+.question_ans{
+	margin: 10px;
+	display: none;
+}
+.info {
+	display: inline-table;
+	float: left;
+	width: 120px;
+}
+.show_t{
+	display:none;
+	float: left;
+	margin: 25px;
+	height: 25px;
+	width: 700px;
+	background-image: url(../../image/learning/bg_bubble.png);
+}
+
+.panel_sub_margin {
+	margin: 20px;
+	border: solid;
+	border-width: thin;
+	border-color: #c3e5e7;
+	background-image: url(../../image/learning/transparent.png);
+}
+
+/*textarea {
+	height: 100px;
+	width: 400px;
+}*/

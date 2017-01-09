@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background-image: url(../../image/system/left_bg.png);
+	background-repeat:repeat-y;
+	font-size: 12px;
+}
+.item {
+	height: 60px;
+	cursor: pointer;
+}
+
+.subitem {
+	margin-left: 70px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	line-height: 30px;
+	display: none;
+}
+a {
+	color: #fff;
+	text-decoration: none;
+}

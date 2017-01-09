@@ -1,0 +1,122 @@
+.testQuery{
+	margin-bottom:30px;
+}
+.condt {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width:1000px;
+}
+
+.condt1 {
+	width: 220px;
+	float: left;
+	margin-top:3px;
+	margin-bottom:3px;
+}
+.condadd {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width:1100px;
+	float:left;
+}
+
+.btn {
+	border: 1px solid #DDD;
+	width: 50px;
+	text-align: center;
+	cursor: pointer;
+}
+.btn_l {
+	border: 1px solid #DDD;
+	width: 70px;
+	text-align: center;
+	cursor: pointer;
+}
+
+select {
+	width: 150px;
+}
+
+.testList {
+	float: left;
+	margin-top:3px;
+	border: 1px solid #DDD;
+}
+
+.list_title {
+	float: left;
+	margin-bottom: 3px;
+	background-color: #DDD;
+}
+
+.ie {
+	float: left;
+	width: 100px;
+	text-align: center;
+	border-right: 1px solid white;
+}
+
+.ie1 {
+	float: left;
+	width: 200px;
+	text-align: center;
+	border-right: 1px solid white;
+}
+
+.ie3 {
+	cursor: pointer;
+	float: left;
+	width: 100px;
+	text-align: center;
+	border-right: 1px solid white;
+}
+
+.list_item {
+	width: 1150px;
+	float: left;
+	margin-top: 1px;
+	margin-bottom: 1px;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:visited {
+	color: blue;
+	text-decoration: none;
+}
+
+.pageDiv {
+	width: 450px;
+}
+
+.page_ul {
+	list-style: none outside none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.page_ul .page {
+	float: left;
+	border: 1px solid #DDD;
+	background: repeat scroll 0 0 #DDD;
+	margin: 5px;
+	width: 27px;
+	height: 27px;
+	text-align: center;
+}
+
+.page_ul .total {
+	float: left;
+	border: 1px solid #DDD;
+	background: repeat scroll 0 0 #DDD;
+	margin: 5px;
+	width: 37px;
+	height: 27px;
+	text-align: center;
+}
